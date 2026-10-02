@@ -2,9 +2,9 @@ import Container from "../Container/Container";
 
 function Footer() {
     return(
-        <div className="bg-gray-500 text-gray-200 py-5 md:px-0 text-justify">
+        <div className="bg-gray-600 text-gray-200 py-5 md:px-0 text-justify">
             <Container>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center font-mono">
                     <h2 className="text-lg">Logo: Shop</h2>
                     <p className="mx-5 md:ml-20">+123456789</p>
                         <p>+987654321</p>
