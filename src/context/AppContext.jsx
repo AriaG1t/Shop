@@ -9,12 +9,16 @@ export const useAppContext = () => {
 function AppContextProvider({children}) {
     
     const [products, setProducts] = useState([])
+
+    const [isLoad, setIsLoad] = useState(false)
     
     return(
         <AppContext.Provider
         value={{
             products,
-            setProducts
+            setProducts,
+            isLoad,
+            setIsLoad
         }}>
             {children}
         </AppContext.Provider>
