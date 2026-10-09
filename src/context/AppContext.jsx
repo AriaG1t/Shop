@@ -27,7 +27,7 @@ function AppContextProvider({children}) {
             products,
             setProducts,
             isLoad,
-            setIsLoad
+            setIsLoad,
         }}>
             {children}
         </AppContext.Provider>

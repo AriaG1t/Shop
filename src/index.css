@@ -6,6 +6,18 @@ body{
     color:rgb(195, 195, 195)
 }
 
+.myGr{
+  background: linear-gradient(160deg, rgb(85, 85, 85), rgb(39, 59, 81) 40%, rgb(20, 21, 41) 93%);
+}
+
+.specialLg{
+  background: linear-gradient(190deg, rgb(134, 99, 99), rgb(204, 49, 1));
+}
+
+.topLG{
+  background: linear-gradient(190deg, rgb(116, 114, 81), rgb(183, 167, 0));  
+}
+
 .skeleton{
   animation: skeleton 3s infinite alternate;
   background-size: 400%;
@@ -14,8 +26,10 @@ body{
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #c1c1c1 !important;
-  background-color: #5d5d5d;
+  width: 35px !important;
+  height: 35px !important;
+  color: #cfcfcf !important;
+  background-color: #727171cc;
   padding:8px 0;
   border-radius: 10px;
 }

@@ -4,7 +4,7 @@ function Item(item) {
     const finalPrice = item.price * (1 - discount);
     
     return(
-        <div className="shadow-mist-500 hover:border-gray-400 sm:h-auto items-center hover:ring-3 ring-0 ring-gray-400 transition-all sm:m-3 my-3 flex sm:flex-col p-3 sm:pt-5 border rounded-lg border-mist-500 shadow justify-between">
+        <div className="shadow-mist-500 bg-zinc-700 hover:border-gray-400 sm:h-auto items-center hover:ring-3 ring-0 ring-gray-400 transition-all sm:m-3 my-3 flex sm:flex-col p-3 sm:pt-5 border rounded-lg border-mist-500 shadow justify-between">
             <div className="h-30 sm:h-40 aspect-square rounded">
                 <img src={item.image} className="h-full mx-auto rounded" alt={`product ${item.id}`} />
             </div>

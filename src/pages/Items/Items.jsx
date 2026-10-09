@@ -3,8 +3,11 @@ import Container from "../../components/Container/Container";
 import Item from "../../components/Item/Item";
 import { useAppContext } from "../../context/AppContext";
 import ItemSkeleton from "../../components/Item/ItemSkeleton";
+import { useSearchParams } from "react-router-dom";
 
 function Items() {
+
+    const [searchParams] = useSearchParams()
 
     const {products, isLoad} = useAppContext()
 
@@ -13,13 +16,13 @@ function Items() {
     const categories = [...new Set(products.map(item => item.category))]
     const [tempfilter, setTempFilter] = useState({
         categories: [],
-        sort: "",
+        sort: searchParams.get("sort") || "",
         highOrLow: "high",
         searchText: ""
     })
     const [filter, setFilter] = useState({
         categories: [],
-        sort: "",
+        sort: searchParams.get("sort") || "",
         highOrLow: "high",
         searchText: ""
     })
@@ -259,7 +262,7 @@ function Items() {
                     <label htmlFor="sort" className="mr-2">Sort by:</label>
                     <select 
                     value={
-                        tempfilter.sort === "" ? "" : tempfilter.value
+                        tempfilter.sort === "" ? "" : tempfilter.sort
                     }
                     onChange={handleSelect} id="sort" className="cursor-pointer open:rounded-b-none bg-mist-700 font-bold shadow-md border outline-0 border-mist-500 px-1 rounded-lg py-0.5">
                         <option value="">None</option>

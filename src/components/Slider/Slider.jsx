@@ -3,24 +3,25 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Item from '../Item/Item';
 
-function Slider() {
+function Slider({item}) {
+
     return(
         <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={80}
                     slidesPerView={1}
                     breakpoints={{
                         1440: {
                             slidesPerView: 4
                         },
                         1024: {
-                            slidesPerView: 4
+                            slidesPerView: 3
                         },
                         768: {
-                            slidesPerView : 3
+                            slidesPerView : 2
                         },
-                        500: {
+                        640: {
                             slidesPerView: 2
                         }
                     }}
@@ -31,31 +32,15 @@ function Slider() {
                     loop
                     navigation
                     >
-                    <SwiperSlide>
-                        <div className="m-auto text-black bg-amber-300 size-50">
-                            Slide 1
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="m-auto text-black bg-amber-300 size-50">
-                            Slide 2
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="m-auto text-black bg-amber-300 size-50">
-                            Slide 3
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="m-auto text-black bg-amber-300 size-50">
-                            Slide 4
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="m-auto text-black bg-amber-300 size-50">
-                            Slide 5
-                        </div>
-                    </SwiperSlide>
+                    {
+                        item.map(product => (
+                            <SwiperSlide>
+                                <div className="m-auto">
+                                    <Item key={product.id} {...product}/>
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
     )
 }
