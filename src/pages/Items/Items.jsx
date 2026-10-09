@@ -1,21 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import {useMemo, useState } from "react";
 import Container from "../../components/Container/Container";
 import Item from "../../components/Item/Item";
-import { getProducts } from "../../services/api";
 import { useAppContext } from "../../context/AppContext";
 import ItemSkeleton from "../../components/Item/ItemSkeleton";
 
 function Items() {
 
-    const {products, setProducts, isLoad, setIsLoad} = useAppContext()
-
-    useEffect(() => {
-        setIsLoad(true)
-        getProducts()
-        .then(result => setProducts(result))
-        .catch(error => console.log(error))
-        .finally(() => setIsLoad(false))
-    }, [])
+    const {products, isLoad} = useAppContext()
 
     // Filter
 
@@ -106,7 +97,12 @@ function Items() {
         if (filter.sort !== "") {
             switch (filter.sort) {
                 case "price":
-                    result.sort((a, b) => b.price * (b.discount !== 0 ? b.discount/100 : 1) - a.price * (a.discount !== 0 ? a.discount/100 : 1))
+                    result.sort((a, b) => {
+                        const priceA = a.price * (1 - a.discount / 100);
+                        const priceB = b.price * (1 - b.discount / 100);
+
+                        return priceB - priceA;
+                    });
                     break;
                 case "discount":
                     result.sort((a, b) => b.discount - a.discount)
@@ -145,6 +141,7 @@ function Items() {
         highOrLow: "high",
         searchText: ""
     })
+    setCurrentPage(1)
     }
 
     // Searching
@@ -201,6 +198,7 @@ function Items() {
     const searchBtn = (e) => {
         e.preventDefault()
         setFilter(prev => ({...prev, searchText: searchInput.toLowerCase()}))
+        setCurrentPage(1)
         setShowSuggests(false)
     }
 
