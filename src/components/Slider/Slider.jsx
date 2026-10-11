@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -9,7 +9,8 @@ function Slider({item}) {
 
     return(
         <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
+                    className='swipe'
+                    modules={[Navigation, Autoplay]}
                     slidesPerView={1}
                     breakpoints={{
                         1440: {

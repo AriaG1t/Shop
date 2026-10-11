@@ -15,13 +15,13 @@ function Items() {
 
     const categories = [...new Set(products.map(item => item.category))]
     const [tempfilter, setTempFilter] = useState({
-        categories: [],
+        categories: searchParams.get("category") ? [searchParams.get("category")] : [] ,
         sort: searchParams.get("sort") || "",
         highOrLow: "high",
         searchText: ""
     })
     const [filter, setFilter] = useState({
-        categories: [],
+        categories: searchParams.get("category") ? [searchParams.get("category")] : [],
         sort: searchParams.get("sort") || "",
         highOrLow: "high",
         searchText: ""
