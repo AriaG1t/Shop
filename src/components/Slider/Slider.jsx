@@ -4,8 +4,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Item from '../Item/Item';
+import { useAppContext } from '../../context/AppContext';
+import ItemSkeleton from '../Item/ItemSkeleton';
 
 function Slider({item}) {
+
+    const {isLoad} = useAppContext()
 
     return(
         <Swiper
@@ -34,13 +38,32 @@ function Slider({item}) {
                     navigation
                     >
                     {
-                        item.map(product => (
+                        isLoad ?
+                        <>
                             <SwiperSlide>
-                                <div className="m-auto">
-                                    <Item key={product.id} {...product}/>
-                                </div>
+                                <ItemSkeleton />
                             </SwiperSlide>
-                        ))
+                            <SwiperSlide>
+                                <ItemSkeleton />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ItemSkeleton />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ItemSkeleton />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ItemSkeleton />
+                            </SwiperSlide>
+                        </> 
+                        : 
+                            item.map(product => (
+                                <SwiperSlide>
+                                    <div className="m-auto">
+                                        <Item key={product.id} {...product}/>
+                                    </div>
+                                </SwiperSlide>
+                            ))
                     }
                 </Swiper>
     )

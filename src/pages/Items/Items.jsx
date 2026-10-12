@@ -218,7 +218,7 @@ function Items() {
 
     return(
         <Container>
-            <div className="font-mono border flex justify-evenly items-center xl:w-4/6 lg:justify-between rounded flex-wrap gap-4 p-3 mt-5 border-mist-500 shadow-md">
+            <div className="font-mono border flex justify-evenly items-center xl:w-5/6 lg:justify-between rounded flex-wrap gap-4 p-3 mt-5 border-mist-500 shadow-md">
                 <form onSubmit={searchBtn} action="" className="flex relative sm:w-auto w-full">
                     <input
                     className="border sm:w-70 w-full border-mist-500 text-sm outline-0 rounded-l px-2 py-1" 
