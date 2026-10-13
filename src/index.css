@@ -34,6 +34,13 @@ body{
   border-radius: 10px;
 }
 
+.imgSwipe .swiper-button-prev,
+.imgSwipe .swiper-button-next{
+  background-color: rgba(39, 39, 39, 0.725);
+  width: 32px !important;
+  height: 32px !important;
+}
+
 @keyframes skeleton {
   0%{
         background-position: 0;

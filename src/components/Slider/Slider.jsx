@@ -6,66 +6,70 @@ import 'swiper/css/pagination';
 import Item from '../Item/Item';
 import { useAppContext } from '../../context/AppContext';
 import ItemSkeleton from '../Item/ItemSkeleton';
+import { Link } from 'react-router-dom';
 
-function Slider({item}) {
+function Slider({ item }) {
 
-    const {isLoad} = useAppContext()
+    const { isLoad } = useAppContext()
 
-    return(
+    return (
         <Swiper
-                    className='swipe'
-                    modules={[Navigation, Autoplay]}
-                    slidesPerView={1}
-                    breakpoints={{
-                        1440: {
-                            slidesPerView: 4
-                        },
-                        1024: {
-                            slidesPerView: 3
-                        },
-                        768: {
-                            slidesPerView : 2
-                        },
-                        640: {
-                            slidesPerView: 2
-                        }
-                    }}
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: true,
-                    }}
-                    loop
-                    navigation
-                    >
-                    {
-                        isLoad ?
-                        <>
-                            <SwiperSlide>
-                                <ItemSkeleton />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <ItemSkeleton />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <ItemSkeleton />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <ItemSkeleton />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <ItemSkeleton />
-                            </SwiperSlide>
-                        </> 
-                        : 
-                            item.map(product => (
-                                <SwiperSlide>
-                                    <div className="m-auto">
-                                        <Item key={product.id} {...product}/>
-                                    </div>
-                                </SwiperSlide>
-                            ))
-                    }
-                </Swiper>
+            className='swipe'
+            modules={[Navigation, Autoplay]}
+            slidesPerView={1}
+            breakpoints={{
+                1440: {
+                    slidesPerView: 4
+                },
+                1024: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                640: {
+                    slidesPerView: 2
+                }
+            }}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: true,
+            }}
+            loop
+            navigation
+        >
+            {
+                isLoad ?
+                    <>
+                        <SwiperSlide>
+                            <ItemSkeleton />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ItemSkeleton />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ItemSkeleton />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ItemSkeleton />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ItemSkeleton />
+                        </SwiperSlide>
+                    </>
+                    :
+                    item.map(product => (
+                        <SwiperSlide>
+                            <div className="m-auto">
+                                <Link to={`/product/${product.id}`}>
+                                    <Item key={product.id} {...product} />
+                                </Link>
+
+                            </div>
+                        </SwiperSlide>
+                    ))
+            }
+        </Swiper>
     )
 }
 

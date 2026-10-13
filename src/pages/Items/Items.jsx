@@ -3,7 +3,7 @@ import Container from "../../components/Container/Container";
 import Item from "../../components/Item/Item";
 import { useAppContext } from "../../context/AppContext";
 import ItemSkeleton from "../../components/Item/ItemSkeleton";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 function Items() {
 
@@ -310,7 +310,9 @@ function Items() {
                         </div> : 
                         <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                             {data.map((item) => (
-                                <Item key={item.id} {...item}/>
+                                <Link to={`/product/${item.id}`}>
+                                    <Item key={item.id} {...item}/>
+                                </Link>
                             ))}
                         </div>
                 }    

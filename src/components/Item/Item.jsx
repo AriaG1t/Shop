@@ -19,7 +19,7 @@ function Item(item) {
                         <>
                             {
                                 discount === 0 ? null :
-                                    <p className="font-mono col-span-3"><span className="text-sm line-through">{item.price}$</span> <span className="bg-red-400 rounded px-1">{item.discount}%</span></p>
+                                    <p className="font-mono col-span-3"><span className="text-sm line-through">{item.price}$</span> <span className="bg-red-500 rounded px-1">{item.discount}%</span></p>
                             }
                             <p className={`font-mono sm:col-span-3 col-span-6 text-green-300 ${discount === 0 ? "text-left" : "sm:text-center"}`}>{discount === 0 ? item.price : finalPrice.toFixed(2)}$</p>
                         </>

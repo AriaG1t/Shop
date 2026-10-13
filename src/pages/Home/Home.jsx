@@ -4,12 +4,9 @@ import Slider from "../../components/Slider/Slider";
 import { useAppContext } from "../../context/AppContext";
 import { useMemo, useState } from "react";
 import { Swiper, SwiperSlide} from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-
 
 function Home() {
 
@@ -51,7 +48,6 @@ function Home() {
 
         return data.filter(item => item.warranty === "no_warranty")
     }, [products])
-    console.log(stock);
     
     return(
         <>
@@ -93,7 +89,7 @@ function Home() {
                 </div>  
                 <div className="text-mist-300 p-1 bg-gray-600 rounded-xl">
                     <Swiper
-                        modules={[Navigation, Pagination]}
+                        modules={[Navigation]}
                         slidesPerView={1}
                         loop
                         onSwiper={setSwiper}
