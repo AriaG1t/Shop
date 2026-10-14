@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import ProductSkeleton from "./ProductSkeleton";
 
 function Product() {
 
@@ -29,7 +30,7 @@ function Product() {
         <Container>
             <div className="flex md:flex-row flex-col gap-5 mt-5">
                 {
-                    isLoad ? <ItemSkeleton /> :
+                    isLoad ? <ProductSkeleton /> :
                         <>
                             <div className="md:col-span-1 font-mono h-fit md:sticky top-18 col-span-3 p-3 shadow-mist-500 bg-zinc-700 rounded-lg border border-mist-500 shadow">
                                 <div className="md:w-60 rounded m-auto">
@@ -80,7 +81,7 @@ function Product() {
                                                     }
                                                     <p className="text-sm font-bold border border-gray-500 shadow bg-gray-600 px-2 rounded-xl">{product.shipping?.estimatedDays} day to deliver</p>
                                                 </div>
-                                                <div className="grid grid-cols-2">
+                                                <div className="md:grid grid-cols-2 hidden">
                                                     {
                                                         product.discount === 0 ? <p className="text-green-300 self-center row-span-2">{product.price}$</p> :
                                                             <>
@@ -100,6 +101,22 @@ function Product() {
                                     }
                                 </div>
                             </div>
+                            <div className="fixed w-full bottom-0 left-0 py-4 rounded-t-2xl z-10 md:hidden flex justify-evenly items-baseline bg-zinc-700 border-t border-gray-400">
+                                <div className="flex">
+                                    {
+                                        product.discount === 0 ? <p className="text-green-300 self-center row-span-2">{product.price}$</p> :
+                                            <>
+
+                                                <p className="line-through">{product.price}$</p>
+                                                <p className="bg-red-500 text-neutral-200 ml-1 mr-4 rounded-lg px-1">{product.discount}%</p>
+                                                <p className="text-green-300">{(product.price * (1 - product.discount / 100)).toFixed(2)}$</p>
+                                            </>
+                                    }
+                                </div>
+                                <button className="p-1.5 rounded-lg border text-sm border-gray-400 shadow hover:ring-2 text-neutral-300 cursor-pointer hover:ring-gray-300 transition-all shadow-gray-700 bg-zinc-600 text-nowrap">
+                                    Add to Cart
+                                </button>
+                            </div>
                             <div className="md:col-span-2 text-justify col-span-3">
                                 <p>{product.description}</p>
                                 <div className="font-mono flex mt-2 flex-wrap gap-2">
@@ -109,12 +126,12 @@ function Product() {
                                         ))
                                     }
                                 </div>
-                                <div className="font-mono mt-5 w-max">
+                                <div className="font-mono mt-5">
                                     <h2 className="text-lg">Specific Details</h2>
-                                    <div className="grid grid-cols-2 gap-y-1 gap-x-4 rounded-lg p-3 my-2 border border-gray-500 shadow-md myGr">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-1 gap-x-4 rounded-lg p-3 my-2 border border-gray-500 shadow-md myGr">
                                         {Object.entries(product.specifications ?? {}).map(([key, value]) => (
                                             <p key={key}>
-                                                <span className="text-lg text-neutral-400">{key}</span>: <span className="border-b border-neutral-400 pb-0.5">{value}</span> 
+                                                <span className="text-lg  text-neutral-400">{key}</span>:<span className="ml-1 border-b border-neutral-400 pb-0.5">{value}</span>
                                             </p>
                                         ))}
                                     </div>
