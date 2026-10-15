@@ -14,7 +14,7 @@ function Product() {
 
     const params = useParams()
 
-    const { isLoad, setIsLoad } = useAppContext()
+    const { isLoad, setIsLoad, addToCart, removeFromCart, plusOne, removeOne, getQty } = useAppContext()
 
     const [product, setProduct] = useState([])
 
@@ -81,27 +81,44 @@ function Product() {
                                                     }
                                                     <p className="text-sm font-bold border border-gray-500 shadow bg-gray-600 px-2 rounded-xl">{product.shipping?.estimatedDays} day to deliver</p>
                                                 </div>
-                                                <div className="md:grid grid-cols-2 hidden">
+                                                <div className="md:grid grid-cols-6 hidden">
                                                     {
                                                         product.discount === 0 ? <p className="text-green-300 self-center row-span-2">{product.price}$</p> :
-                                                            <>
-                                                                <div className="flex items-baseline gap-2">
+                                                            <div className="row-span-2 self-center">
+                                                                <div className="flex items-baseline gap-2 col-span-3">
                                                                     <p className="line-through text-sm">{product.price}$</p>
                                                                     <p className="bg-red-500 rounded-lg px-1">{product.discount}%</p>
                                                                 </div>
-                                                                <p className="col-start-1 text-green-300">{(product.price * (1 - product.discount / 100)).toFixed(2)}$</p>
-                                                            </>
+                                                                <p className="text-green-300">{(product.price * (1 - product.discount / 100)).toFixed(2)}$</p>
+                                                            </div>
                                                     }
-                                                    <button className={`${product.discount === 0 && "py-1.5"} row-start-1 rounded-lg border border-gray-400 shadow hover:ring-2 text-neutral-300 cursor-pointer hover:ring-gray-300 transition-all shadow-gray-700 bg-zinc-600 text-nowrap row-span-2 col-start-2`}>
-                                                        Add to Cart
-                                                    </button>
+                                                    {
+                                                        getQty(product.id) ?
+                                                            <>
+                                                                <div className="flex col-span-3 col-start-4 justify-between items-center">
+                                                                    <button onClick={() => plusOne(product.id)} className="cursor-pointer size-8 hover:ring-2 text-neutral-300 shadow-md hover:ring-neutral-300 transition-all bg-green-600 font-black text-2xl px-2 rounded-full">
+                                                                        +
+                                                                    </button>
+                                                                    <p className="text-xl border-b">{getQty(product.id)}</p>
+                                                                    <button onClick={() => removeOne(product.id)} className="cursor-pointer size-8 hover:ring-2 text-neutral-300 shadow-md hover:ring-neutral-300 transition-all bg-red-600 font-black text-2xl px-2 rounded-full">
+                                                                        -
+                                                                    </button>
+                                                                </div>
+                                                                <button onClick={() => removeFromCart(product.id)} className="mt-1.5 flex justify-center py-1 w-3/5 mx-auto cursor-pointer hover:ring-2 text-neutral-300 shadow-md hover:ring-neutral-300 transition-all bg-red-600 font-black col-span-3 col-start-4 px-2 rounded-md">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill={"currentColor"} viewBox={"0 0 24 24"}>{/* Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free */}<path d="M17 6V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8h2V6zM9 4h6v2H9zM6 20V8h12v12z" /><path d="M9 10h2v8H9zM13 10h2v8h-2z" /></svg>
+                                                                </button>
+                                                            </>
+                                                            :
+                                                            <button onClick={() => addToCart(product)} className={`col-span-3 ${product.discount === 0 && "py-1.5"} row-start-1 rounded-lg border border-gray-400 shadow hover:ring-2 text-neutral-300 cursor-pointer hover:ring-gray-300 transition-all shadow-gray-700 bg-zinc-600 text-nowrap row-span-2 col-start-4`}>
+                                                                Add to Cart
+                                                            </button>
+                                                    }
                                                 </div>
-
                                             </>
                                     }
                                 </div>
                             </div>
-                            <div className="fixed w-full bottom-0 left-0 py-4 rounded-t-2xl z-10 md:hidden flex justify-evenly items-baseline bg-zinc-700 border-t border-gray-400">
+                            <div className="fixed w-full bottom-0 left-0 pb-3 pt-2 rounded-t-2xl z-10 md:hidden flex justify-evenly items-baseline bg-zinc-700 border-t border-gray-400">
                                 <div className="flex">
                                     {
                                         product.discount === 0 ? <p className="text-green-300 self-center row-span-2">{product.price}$</p> :
@@ -113,9 +130,24 @@ function Product() {
                                             </>
                                     }
                                 </div>
-                                <button className="p-1.5 rounded-lg border text-sm border-gray-400 shadow hover:ring-2 text-neutral-300 cursor-pointer hover:ring-gray-300 transition-all shadow-gray-700 bg-zinc-600 text-nowrap">
-                                    Add to Cart
-                                </button>
+                                {
+                                    getQty(product.id) ?
+                                        <>
+                                            <div className="flex items-center">
+                                                <button onClick={() => plusOne(product.id)} className="pb-1 size-9 cursor-pointer hover:ring-2 text-neutral-300 shadow-md hover:ring-neutral-300 transition-all bg-green-600 font-black text-2xl px-2 rounded-full">
+                                                    +
+                                                </button>
+                                                <p className="text-xl mx-5 border-b">{getQty(product.id)}</p>
+                                                <button onClick={() => removeOne(product.id)} className="pb-1 size-9 cursor-pointer hover:ring-2 text-neutral-300 shadow-md hover:ring-neutral-300 transition-all bg-red-600 font-black text-2xl px-2 rounded-full">
+                                                    -
+                                                </button>
+                                            </div>
+                                        </>
+                                        :
+                                        <button onClick={() => addToCart(product)} className={`col-span-3 p-1.5 ${product.discount === 0 && "py-1.5"} row-start-1 rounded-lg border border-gray-400 shadow hover:ring-2 text-neutral-300 cursor-pointer hover:ring-gray-300 transition-all shadow-gray-700 bg-zinc-600 text-nowrap row-span-2 col-start-4`}>
+                                            Add to Cart
+                                        </button>
+                                }
                             </div>
                             <div className="md:col-span-2 text-justify col-span-3">
                                 <p>{product.description}</p>

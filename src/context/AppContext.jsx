@@ -7,28 +7,97 @@ export const useAppContext = () => {
     return useContext(AppContext)
 }
 
-function AppContextProvider({children}) {
-    
+function AppContextProvider({ children }) {
+
     const [products, setProducts] = useState([])
 
     const [isLoad, setIsLoad] = useState(false)
 
+    const [cartItems, setCartItems] = useState([])
+
     useEffect(() => {
         setIsLoad(true)
         getProducts()
-        .then(result => setProducts(result))
-        .catch(error => console.log(error))
-        .finally(() => setIsLoad(false))
+            .then(result => setProducts(result))
+            .catch(error => console.log(error))
+            .finally(() => setIsLoad(false))
     }, [])
-    
-    return(
+
+    const addToCart = (product) => {
+        setCartItems(prev => {
+            return [
+                ...prev,
+                {
+                    product: product,
+                    qty: 1
+                }
+            ]
+        })
+    }
+
+    const plusOne = (id) => {
+        setCartItems(prev => {
+            return prev.map(item => {
+                if (item.product.id === id) {
+                    return {
+                        ...item,
+                        qty: item.qty + 1
+                    }
+                } else {
+                    return item
+                }
+            })
+        })
+    }
+
+    const removeOne = (id) => {
+        setCartItems(prev => {
+            if (cartItems.find(item => item.product.id === id).qty === 1 ) {
+                return prev.filter(item => item.product.id !== id)
+            } else {
+                return prev.map(item => {
+                    if (item.product.id === id) {
+                        return {
+                            ...item,
+                            qty: item.qty - 1
+                        }
+                    } else {
+                        return item
+                    }
+                })
+            }
+        })
+    }
+
+    const removeFromCart = (id) => {
+        setCartItems(prev => {
+            return prev.filter(item => item.product.id !== id)
+        })
+    }
+
+    const getQty = (id) => {
+        return cartItems.find(item => item.product.id === id)?.qty
+    }
+
+    // {
+    //      product: {product},
+    //      qty: 1
+    // }
+
+    return (
         <AppContext.Provider
-        value={{
-            products,
-            setProducts,
-            isLoad,
-            setIsLoad,
-        }}>
+            value={{
+                products,
+                setProducts,
+                isLoad,
+                setIsLoad,
+                cartItems,
+                addToCart,
+                plusOne,
+                removeOne,
+                removeFromCart,
+                getQty
+            }}>
             {children}
         </AppContext.Provider>
     )

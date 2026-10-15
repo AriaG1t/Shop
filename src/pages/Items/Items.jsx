@@ -296,7 +296,7 @@ function Items() {
                         tempfilter.categories.map((item) => (
                             <div className="text-sm flex items-center bg-mist-700 border border-gray-400 rounded-full px-2 py-1">
                                 <p key={`${item}P`}>{item}</p>
-                                <button onClick={handleRemove} name={item} key={item} className="text-lg flex justify-center pb-0.25 items-center cursor-pointer hover:ring-2 ring-gray-400 bg-red-800 size-6 rounded-full ml-1">x</button>
+                                <button onClick={handleRemove} name={item} key={item} className="text-lg flex justify-center pb-px items-center cursor-pointer hover:ring-2 ring-gray-400 bg-red-800 size-6 rounded-full ml-1">x</button>
                             </div>
                         ))
                     }
