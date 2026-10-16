@@ -3,13 +3,13 @@ import Container from "../Container/Container";
 
 function NavBar() {
 
-    return(
+    return (
         <nav className="z-99 backdrop-blur-sm border-mist-500 border font-mono bg-mist-800/50 text-gray-200 sm:w-3/4 w-9/10 max-w-170 top-2 right-1/2 translate-x-1/2 fixed px-5 rounded-full">
             <Container>
                 <div className="flex justify-between items-center h-11">
                     <ul className="flex">
                         <li>
-                            <NavLink to="/" className={({isActive}) => 
+                            <NavLink to="/" className={({ isActive }) =>
                                 `relative cursor-pointer
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
@@ -20,11 +20,11 @@ function NavBar() {
                             </NavLink>
                         </li>
                         <li
-                        className="mx-3">
+                            className="mx-3">
                             User
                         </li>
                         <li>
-                            <NavLink to="/items" className={({isActive}) => 
+                            <NavLink to="/items" className={({ isActive }) =>
                                 `relative cursor-pointer
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
@@ -33,9 +33,25 @@ function NavBar() {
                             </NavLink>
                         </li>
                     </ul>
-                    <button>
-                        Cart
-                    </button>
+                    <NavLink to="/cart" className={({ isActive }) =>
+                        `relative cursor-pointer
+                                ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
+                                hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
+                    }>
+                        <div className="text-white">
+                            <svg
+                                width="24px"
+                                height="24px"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="#e5e7eb">
+                                <circle cx={16.5} cy={18.5} r={1.5} />
+                                <circle cx={9.5} cy={18.5} r={1.5} />
+                                <path d="M18 16H8a1 1 0 0 1-.958-.713L4.256 6H3a1 1 0 0 1 0-2h2a1 1 0 0 1 .958.713L6.344 6H21a1 1 0 0 1 .937 1.352l-3 8A1 1 0 0 1 18 16zm-9.256-2h8.563l2.25-6H6.944z" />
+                            </svg>
+                        </div>
+
+                    </NavLink>
                 </div>
             </Container>
         </nav>

@@ -77,7 +77,7 @@ function Product() {
                                                 <div className="flex my-2 gap-1.5 flex-wrap">
                                                     <p className="text-sm font-bold border border-gray-500 shadow bg-gray-600 px-2 rounded-xl">{product.warranty} warranty</p>
                                                     {
-                                                        product.shipping?.free ? <p className="text-sm border border-gray-500 shadow font-bold bg-gray-600 px-2 rounded-xl">Free shipping</p> : null
+                                                        product.shipping?.free && <p className="text-sm border border-gray-500 shadow font-bold bg-gray-600 px-2 rounded-xl">Free shipping</p>
                                                     }
                                                     <p className="text-sm font-bold border border-gray-500 shadow bg-gray-600 px-2 rounded-xl">{product.shipping?.estimatedDays} day to deliver</p>
                                                 </div>
