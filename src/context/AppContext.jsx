@@ -28,6 +28,8 @@ function AppContextProvider({ children }) {
 
     const [products, setProducts] = useState([])
 
+    const [activeMenu, setActiveMenu] = useState(null)
+
     const [isLoad, setIsLoad] = useState(false)
 
     const [cartItems, setCartItems] = useLocalStorage("cart", [])
@@ -139,7 +141,9 @@ function AppContextProvider({ children }) {
                 isLogin,
                 setIsLogin,
                 login,
-                setLogin
+                setLogin,
+                activeMenu,
+                setActiveMenu
             }}>
             {children}
         </AppContext.Provider>

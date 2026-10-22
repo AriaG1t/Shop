@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom"
 import { useAppContext } from "../../context/AppContext"
 
-function PrivateRoute({ children }) {
+function PrivateRoute() {
 
     const { isLogin } = useAppContext()
 
