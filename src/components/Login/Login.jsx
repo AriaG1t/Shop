@@ -71,8 +71,8 @@ function Login() {
                 {
                     isLogin.isLogin && <p className="text-wrap w-80 text-green-500 text-xs">You've loged in!</p>
                 }
-                <div className="m-auto"><p className="text-sm">No account? <button className="cursor-pointer text-xs underline hover:text-green-500" onClick={() => setIsLoginMode(false)}>Create One</button></p></div>
-                <button className="bg-gray-600 w-min m-auto px-2 py-1 rounded-xl shadow shadow-mist-600 hover:ring-2 hover:ring-mist-400 cursor-pointer transition-all">Submit</button>
+                <div className="m-auto"><p className="text-sm">No account? <button type="button" className="cursor-pointer text-xs underline hover:text-green-500" onClick={() => setIsLoginMode(false)}>Create One</button></p></div>
+                <button type="submit" className="bg-gray-600 w-min m-auto px-2 py-1 rounded-xl shadow shadow-mist-600 hover:ring-2 hover:ring-mist-400 cursor-pointer transition-all">Submit</button>
             </form>
         </div>
     )

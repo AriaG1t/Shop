@@ -9,11 +9,28 @@ export const useAppContext = () => {
 
 function AppContextProvider({ children }) {
 
+    const useLocalStorage = (key, initialVlue) => {
+        const [value, setValue] = useState(() => {
+            let local = localStorage.getItem(key)
+            if (local !== null) {
+                return JSON.parse(local)
+            }
+            else {
+                return initialVlue
+            }
+        })
+
+        useEffect(() => {
+            localStorage.setItem(key, JSON.stringify(value))
+        }, [key, value])
+        return [value, setValue]
+    }
+
     const [products, setProducts] = useState([])
 
     const [isLoad, setIsLoad] = useState(false)
 
-    const [cartItems, setCartItems] = useState([])
+    const [cartItems, setCartItems] = useLocalStorage("cart", [])
 
     const [signUp, setSignUp] = useState({
         email: "",
@@ -26,7 +43,7 @@ function AppContextProvider({ children }) {
         password: ""
     })
 
-    const [isLogin, setIsLogin] = useState({
+    const [isLogin, setIsLogin] = useLocalStorage("islogin", {
         isLogin: false,
         isAdmin: false
     })
@@ -70,7 +87,7 @@ function AppContextProvider({ children }) {
 
     const removeOne = (id) => {
         setCartItems(prev => {
-            if (cartItems.find(item => item.product.id === id).qty === 1 ) {
+            if (cartItems.find(item => item.product.id === id).qty === 1) {
                 return prev.filter(item => item.product.id !== id)
             } else {
                 return prev.map(item => {
@@ -116,7 +133,7 @@ function AppContextProvider({ children }) {
                 removeFromCart,
                 getQty,
                 signUp,
-                setSignUp, 
+                setSignUp,
                 isLoginMode,
                 setIsLoginMode,
                 isLogin,
