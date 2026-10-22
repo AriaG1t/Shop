@@ -15,6 +15,24 @@ function AppContextProvider({ children }) {
 
     const [cartItems, setCartItems] = useState([])
 
+    const [signUp, setSignUp] = useState({
+        email: "",
+        password: "",
+        rePassword: ""
+    })
+
+    const [login, setLogin] = useState({
+        email: "",
+        password: ""
+    })
+
+    const [isLogin, setIsLogin] = useState({
+        isLogin: false,
+        isAdmin: false
+    })
+
+    const [isLoginMode, setIsLoginMode] = useState(true)
+
     useEffect(() => {
         setIsLoad(true)
         getProducts()
@@ -96,7 +114,15 @@ function AppContextProvider({ children }) {
                 plusOne,
                 removeOne,
                 removeFromCart,
-                getQty
+                getQty,
+                signUp,
+                setSignUp, 
+                isLoginMode,
+                setIsLoginMode,
+                isLogin,
+                setIsLogin,
+                login,
+                setLogin
             }}>
             {children}
         </AppContext.Provider>

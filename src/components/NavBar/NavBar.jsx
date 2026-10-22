@@ -19,9 +19,14 @@ function NavBar() {
                                 </svg>
                             </NavLink>
                         </li>
-                        <li
-                            className="mx-3">
-                            User
+                        <li>
+                            <NavLink to="/login" className={({ isActive }) =>
+                                `relative cursor-pointer mx-3
+                                ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
+                                hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
+                            }>
+                                User
+                            </NavLink>
                         </li>
                         <li>
                             <NavLink to="/items" className={({ isActive }) =>

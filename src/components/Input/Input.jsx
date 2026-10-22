@@ -1,18 +1,36 @@
-import { useState } from "react";
+import { useId, useState } from "react";
+import { useAppContext } from "../../context/AppContext";
 
 function Input({ type }) {
 
     const [showPassword, setShowPassword] = useState(false)
 
+    const { setSignUp, isLoginMode, setLogin } = useAppContext()
+
+    const handleInput = (e) => {
+        if (isLoginMode) {
+            setLogin(prev => ({
+                ...prev,
+                [e.target.name]: e.target.value
+            }))
+        } else {
+            setSignUp(prev => ({
+                ...prev,
+                [e.target.name]: e.target.value
+            }))
+        }
+    }
+
     return (
         <div className="relative sm:w-min">
             <input
-                maxLength={type === "Password" || type ==="Re-Enter Password" ? 16 : -1}
-                minLength={type === "Password" || type ==="Re-Enter Password" ? 8 : -1}
-                required
+                onInput={handleInput}
+                name={type === "Re-Enter Password" ? "rePassword" : type.toLowerCase()}
+                maxLength={type === "Password" || type === "Re-Enter Password" ? 16 : -1}
+                minLength={type === "Password" || type === "Re-Enter Password" ? 8 : -1}
                 placeholder=" "
                 id={type}
-                className="border border-mist-400 focus:ring-2 transition-all focus:ring-mist-400 px-2 py-0.5 sm:w-80 w-full peer rounded outline-0 "
+                className="border border-mist-400 focus:ring-2 transition-all focus:ring-mist-400 px-2 py-0.5 sm:w-80 w-full peer rounded outline-0"
                 type={type === "Re-Enter Password" ? showPassword ? "text" : "password" : showPassword ? "text" : type.toLowerCase()} />
             <label className="
             pointer-events-none
