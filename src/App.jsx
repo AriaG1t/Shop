@@ -6,6 +6,8 @@ import Product from "./pages/Product/Product";
 import Cart from "./pages/Cart/Cart";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import AdminPanel from "./pages/AdminPanel/AdminPanel";
+import AdminProduct from "./pages/AdminProduct/AdminProduct";
 
 function App() {
   return (
@@ -16,6 +18,10 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route element={<PrivateRoute />}>
           <Route path="/cart" element={<Cart />} />
+        </Route>
+        <Route element={<PrivateRoute requiredRole="admin"/>}>
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/admin/product/:id" element={<AdminProduct />} />
         </Route>
         <Route path="/Login" element={<LoginPage />} />
       </Routes>

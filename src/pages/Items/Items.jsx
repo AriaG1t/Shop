@@ -239,7 +239,7 @@ function Items() {
                                             onClick={suggestionClick}
                                             className="border my-1.5 hover:ring-2 ring-mist-400 cursor-pointer border-mist-700 rounded-full w-fit py-0.5 shadow shadow-neutral-700 px-2">{item}</p>
                                     )) : searchInput !== "" && <p className="my-3">No match found</p>
-                                }
+                            }
                         </div>
                     }
                 </form>
@@ -310,11 +310,11 @@ function Items() {
                     <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                         <ItemSkeleton /><ItemSkeleton /><ItemSkeleton /><ItemSkeleton /><ItemSkeleton />
                     </div> :
-                    <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+                    <div className="grid mt-6 gap-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                         {
                             data.length > 0 ?
                                 data.map((item) => (
-                                    <Link to={`/product/${item.id}`}>
+                                    <Link className="h-min" to={`/product/${item.id}`}>
                                         <Item key={item.id} {...item} />
                                     </Link>
                                 )) : <p className="font-mono text-xl mx-auto mt-10">No Product Found</p>

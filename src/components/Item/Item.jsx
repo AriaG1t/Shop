@@ -1,10 +1,15 @@
+import { Link, useLocation } from "react-router-dom";
 
 function Item(item) {
+
     const discount = (item.discount / 100)
-    const finalPrice = item.price * (1 - discount);
+
+    const finalPrice = item.price * (1 - discount)
+
+    const location = useLocation()
 
     return (
-        <div className="shadow-mist-500 bg-zinc-700 hover:border-gray-400 sm:h-auto items-center hover:ring-3 ring-0 ring-gray-400 transition-all sm:m-3 my-3 flex sm:flex-col p-3 sm:pt-5 border rounded-lg border-mist-500 shadow justify-between">
+        <div className="shadow-mist-500 has-[a:hover]:hover:ring-0 has-[button:hover]:hover:ring-0 bg-zinc-700 hover:border-gray-400 items-center hover:ring-3 ring-0 ring-gray-400 transition-all flex sm:flex-col p-3 sm:pt-5 border rounded-lg border-mist-500 shadow justify-between">
             <div className="h-30 sm:h-40 aspect-square rounded">
                 <img src={item.image} className="h-full mx-auto rounded" alt={`product ${item.id}`} />
             </div>
@@ -34,6 +39,21 @@ function Item(item) {
                 <p className="line-clamp-2 col-span-6 text-sm">
                     {item.description}
                 </p>
+                {
+                    location.pathname === "/admin" &&
+                    <div className="font-mono mt-2 col-span-6 flex justify-between">
+                        <Link
+                            to={`/admin/product/${item.id}`}
+                            className="bg-green-700 rounded-lg px-3 shadow hover:ring-3 hover:ring-mist-400 transition-all">
+                            Edit
+                        </Link>
+                        <button
+                            onClick={(e) => { e.preventDefault(), e.stopPropagation() }}
+                            className="bg-red-700 cursor-pointer rounded-lg px-3 shadow hover:ring-3 hover:ring-mist-400 transition-all">
+                            Delete
+                        </button>
+                    </div>
+                }
             </div>
         </div>
     )

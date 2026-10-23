@@ -29,7 +29,7 @@ function NavBar() {
 
     return (
         <>
-            <nav ref={navbarRef} className="z-99 backdrop-blur-sm border-mist-500 border font-mono bg-mist-800/50 text-gray-200 sm:w-3/4 w-9/10 max-w-170 top-2 right-1/2 translate-x-1/2 fixed px-5 rounded-full">
+            <nav ref={navbarRef} className="z-80 backdrop-blur-sm border-mist-500 border font-mono bg-mist-800/50 text-gray-200 sm:w-3/4 w-9/10 max-w-170 top-2 right-1/2 translate-x-1/2 fixed px-5 rounded-full">
                 <Container>
                     <div className="flex justify-between items-center h-11">
                         <ul className="flex">
@@ -87,9 +87,13 @@ function NavBar() {
                             </NavLink>
                             {
                                 isLogin.isAdmin &&
-                                <button className="sm:block hidden cursor-pointer">
+                                <NavLink to="/admin" className={({ isActive }) =>
+                                    `relative cursor-pointer
+                                ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
+                                sm:block hidden hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
+                                }>
                                     Admin Panel
-                                </button>
+                                </NavLink>
                             }
                             <button onClick={handleSideMenu} className="sm:hidden cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill={"currentColor"} viewBox={"0 0 24 24"}>{/* Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free */}<path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path></svg>
@@ -102,9 +106,13 @@ function NavBar() {
             <SideMenu position={position} isOpen={activeMenu === "navbar"}>
                 {
                     isLogin.isAdmin &&
-                    <button className="cursor-pointer">
+                    <NavLink to="/admin" className={({ isActive }) =>
+                        `relative cursor-pointer
+                                ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
+                                sm:hidden hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
+                    }>
                         Admin Panel
-                    </button>
+                    </NavLink>
                 }
                 <NavLink to="/login" className={({ isActive }) =>
                     `relative cursor-pointer
