@@ -6,7 +6,6 @@ import 'swiper/css/pagination';
 import Item from '../Item/Item';
 import { useAppContext } from '../../context/AppContext';
 import ItemSkeleton from '../Item/ItemSkeleton';
-import { Link } from 'react-router-dom';
 
 function Slider({ item }) {
 
@@ -60,11 +59,8 @@ function Slider({ item }) {
                     :
                     item.map(product => (
                         <SwiperSlide>
-                            <div className="m-auto">
-                                <Link to={`/product/${product.id}`}>
-                                    <Item key={product.id} {...product} />
-                                </Link>
-
+                            <div className="m-auto p-3">
+                                <Item key={product.id} {...product} />
                             </div>
                         </SwiperSlide>
                     ))

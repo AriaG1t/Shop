@@ -110,7 +110,8 @@ function NavBar() {
                         `relative cursor-pointer
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 sm:hidden hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
-                    }>
+                    }
+                    onClick={() => setActiveMenu(null)}>
                         Admin Panel
                     </NavLink>
                 }
@@ -118,14 +119,16 @@ function NavBar() {
                     `relative cursor-pointer
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                             hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
-                }>
+                }
+                onClick={() => setActiveMenu(null)}>
                     User
                 </NavLink>
                 <NavLink to="/items" className={({ isActive }) =>
                     `relative cursor-pointer
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
-                }>
+                }
+                onClick={() => setActiveMenu(null)}>
                     Products
                 </NavLink>
             </SideMenu>

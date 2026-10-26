@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Apple Business 5",
       "brand": "Apple",
       "category": "laptops",
@@ -42,12 +42,12 @@
       ]
     },
     {
-      "id": 2,
-      "title": "Dell Slim 1",
+      "id": "2",
+      "title": "Dell slim 1",
       "brand": "Dell",
       "category": "laptops",
-      "price": 559.59,
-      "discount": 5,
+      "price": "6767",
+      "discount": "67",
       "stock": 29,
       "rating": 4.2,
       "reviews": 120,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Samsung Active 7",
       "brand": "Samsung",
       "category": "smartwatches",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Nikon Creator 3",
       "brand": "Nikon",
       "category": "cameras",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Nintendo Gaming Mouse 5",
       "brand": "Nintendo",
       "category": "gaming",
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Dell Gaming 6",
       "brand": "Dell",
       "category": "laptops",
@@ -244,14 +244,14 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Lenovo Pro 7",
       "brand": "Lenovo",
       "category": "laptops",
       "price": 1055.95,
       "discount": 15,
       "stock": 20,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 870,
       "description": "The Lenovo Pro 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-7-1/900/900",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "LG Curved 3",
       "brand": "LG",
       "category": "monitors",
@@ -325,14 +325,14 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Samsung Classic 1",
       "brand": "Samsung",
       "category": "smartwatches",
       "price": 267.82,
       "discount": 0,
       "stock": 40,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 283,
       "description": "The Samsung Classic 1 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-9-1/900/900",
@@ -365,7 +365,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "HyperX RGB 4",
       "brand": "HyperX",
       "category": "keyboards",
@@ -405,14 +405,14 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "HyperX Gaming 5",
       "brand": "HyperX",
       "category": "keyboards",
       "price": 195.61,
       "discount": 20,
       "stock": 74,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 910,
       "description": "The HyperX Gaming 5 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-11-1/900/900",
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Sennheiser Sport 2",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -485,7 +485,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Anker Cable 7",
       "brand": "Anker",
       "category": "accessories",
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Apple Edge 9",
       "brand": "Apple",
       "category": "smartphones",
@@ -566,7 +566,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Apple Plus 9",
       "brand": "Apple",
       "category": "tablets",
@@ -607,7 +607,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Belkin Power Bank 6",
       "brand": "Belkin",
       "category": "accessories",
@@ -647,7 +647,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Nintendo Gaming Headset 1",
       "brand": "Nintendo",
       "category": "gaming",
@@ -687,7 +687,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Samsung Pro 8",
       "brand": "Samsung",
       "category": "smartwatches",
@@ -727,7 +727,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "HyperX Wireless 5",
       "brand": "HyperX",
       "category": "keyboards",
@@ -767,7 +767,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Lenovo Air 2",
       "brand": "Lenovo",
       "category": "laptops",
@@ -808,7 +808,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Samsung Pro Max 1",
       "brand": "Samsung",
       "category": "smartphones",
@@ -849,7 +849,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "HyperX Wireless 8",
       "brand": "HyperX",
       "category": "keyboards",
@@ -889,7 +889,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Nikon Professional 7",
       "brand": "Nikon",
       "category": "cameras",
@@ -929,7 +929,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Lenovo Air 4",
       "brand": "Lenovo",
       "category": "laptops",
@@ -970,7 +970,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Logitech Compact 9",
       "brand": "Logitech",
       "category": "keyboards",
@@ -1010,7 +1010,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Anker Sport 8",
       "brand": "Anker",
       "category": "headphones",
@@ -1050,7 +1050,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Nikon Professional 5",
       "brand": "Nikon",
       "category": "cameras",
@@ -1090,7 +1090,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "OnePlus Edge 9",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -1131,7 +1131,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Huawei Pro 1",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -1171,7 +1171,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Corsair Mechanical 4",
       "brand": "Corsair",
       "category": "keyboards",
@@ -1211,7 +1211,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Garmin Classic 4",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -1251,7 +1251,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "ASUS Gaming 2",
       "brand": "ASUS",
       "category": "monitors",
@@ -1291,7 +1291,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Samsung Gaming 2",
       "brand": "Samsung",
       "category": "monitors",
@@ -1331,7 +1331,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "AOC Curved 1",
       "brand": "AOC",
       "category": "monitors",
@@ -1371,7 +1371,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "LG 4K 9",
       "brand": "LG",
       "category": "monitors",
@@ -1411,7 +1411,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "AOC IPS 5",
       "brand": "AOC",
       "category": "monitors",
@@ -1451,7 +1451,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Apple Plus 3",
       "brand": "Apple",
       "category": "smartphones",
@@ -1492,7 +1492,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Panasonic Mirrorless 2",
       "brand": "Panasonic",
       "category": "cameras",
@@ -1532,7 +1532,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Baseus Power Bank 7",
       "brand": "Baseus",
       "category": "accessories",
@@ -1572,7 +1572,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "Microsoft Gaming Headset 2",
       "brand": "Microsoft",
       "category": "gaming",
@@ -1612,7 +1612,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "JBL Sport 1",
       "brand": "JBL",
       "category": "headphones",
@@ -1652,7 +1652,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Samsung 4K 7",
       "brand": "Samsung",
       "category": "monitors",
@@ -1692,7 +1692,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "Nintendo Gaming Headset 4",
       "brand": "Nintendo",
       "category": "gaming",
@@ -1732,7 +1732,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Dell Curved 7",
       "brand": "Dell",
       "category": "monitors",
@@ -1772,7 +1772,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "Sennheiser Studio 1",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -1812,7 +1812,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "Panasonic Compact 2",
       "brand": "Panasonic",
       "category": "cameras",
@@ -1852,7 +1852,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": "47",
       "title": "OnePlus Note 4",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -1893,7 +1893,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": "48",
       "title": "AOC Gaming 7",
       "brand": "AOC",
       "category": "monitors",
@@ -1933,7 +1933,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": "49",
       "title": "Sony Compact 5",
       "brand": "Sony",
       "category": "cameras",
@@ -1973,7 +1973,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": "50",
       "title": "Baseus Charger 8",
       "brand": "Baseus",
       "category": "accessories",
@@ -2013,7 +2013,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": "51",
       "title": "ASUS Creator 6",
       "brand": "ASUS",
       "category": "laptops",
@@ -2054,7 +2054,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": "52",
       "title": "Sony Wireless 4",
       "brand": "Sony",
       "category": "headphones",
@@ -2094,7 +2094,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": "53",
       "title": "Corsair Compact 7",
       "brand": "Corsair",
       "category": "keyboards",
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": "54",
       "title": "Sennheiser Sport 1",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -2174,7 +2174,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": "55",
       "title": "Huawei Active 6",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -2214,7 +2214,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": "56",
       "title": "Samsung Ultra 8",
       "brand": "Samsung",
       "category": "tablets",
@@ -2255,7 +2255,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": "57",
       "title": "Samsung Plus 8",
       "brand": "Samsung",
       "category": "tablets",
@@ -2296,7 +2296,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": "58",
       "title": "Apple Pro 3",
       "brand": "Apple",
       "category": "smartwatches",
@@ -2336,7 +2336,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": "59",
       "title": "SteelSeries Elite Controller 7",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -2376,7 +2376,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": "60",
       "title": "Spigen Cable 1",
       "brand": "Spigen",
       "category": "accessories",
@@ -2416,7 +2416,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": "61",
       "title": "Huawei Active 4",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -2456,7 +2456,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": "62",
       "title": "Razer Gaming Headset 8",
       "brand": "Razer",
       "category": "gaming",
@@ -2496,7 +2496,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": "63",
       "title": "HP Air 8",
       "brand": "HP",
       "category": "laptops",
@@ -2537,7 +2537,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": "64",
       "title": "Nintendo Elite Controller 5",
       "brand": "Nintendo",
       "category": "gaming",
@@ -2577,7 +2577,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": "65",
       "title": "OnePlus Pro Max 6",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -2618,7 +2618,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": "66",
       "title": "Logitech Gaming 3",
       "brand": "Logitech",
       "category": "keyboards",
@@ -2658,7 +2658,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": "67",
       "title": "Lenovo Plus 3",
       "brand": "Lenovo",
       "category": "tablets",
@@ -2699,7 +2699,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": "68",
       "title": "Anker Charger 7",
       "brand": "Anker",
       "category": "accessories",
@@ -2739,7 +2739,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": "69",
       "title": "ASUS Business 2",
       "brand": "ASUS",
       "category": "laptops",
@@ -2780,7 +2780,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": "70",
       "title": "Dell Business 6",
       "brand": "Dell",
       "category": "laptops",
@@ -2821,7 +2821,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": "71",
       "title": "Samsung Ultra 3",
       "brand": "Samsung",
       "category": "tablets",
@@ -2862,7 +2862,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": "72",
       "title": "Panasonic Creator 6",
       "brand": "Panasonic",
       "category": "cameras",
@@ -2902,7 +2902,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": "73",
       "title": "Microsoft Tab 7",
       "brand": "Microsoft",
       "category": "tablets",
@@ -2943,7 +2943,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": "74",
       "title": "Nintendo Console 5",
       "brand": "Nintendo",
       "category": "gaming",
@@ -2983,7 +2983,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": "75",
       "title": "Lenovo Business 7",
       "brand": "Lenovo",
       "category": "laptops",
@@ -3024,7 +3024,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": "76",
       "title": "Apple Pro 5",
       "brand": "Apple",
       "category": "tablets",
@@ -3065,7 +3065,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": "77",
       "title": "Microsoft Tab 6",
       "brand": "Microsoft",
       "category": "tablets",
@@ -3106,7 +3106,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": "78",
       "title": "Dell UltraWide 2",
       "brand": "Dell",
       "category": "monitors",
@@ -3146,7 +3146,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": "79",
       "title": "Razer Compact 5",
       "brand": "Razer",
       "category": "keyboards",
@@ -3186,7 +3186,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": "80",
       "title": "Keychron Wireless 5",
       "brand": "Keychron",
       "category": "keyboards",
@@ -3226,7 +3226,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": "81",
       "title": "Garmin Pro 8",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -3266,7 +3266,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": "82",
       "title": "Lenovo Air 1",
       "brand": "Lenovo",
       "category": "tablets",
@@ -3307,14 +3307,14 @@
       ]
     },
     {
-      "id": 83,
+      "id": "83",
       "title": "Apple Tab 1",
       "brand": "Apple",
       "category": "tablets",
       "price": 380.28,
       "discount": 10,
       "stock": 10,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 497,
       "description": "The Apple Tab 1 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-83-1/900/900",
@@ -3348,7 +3348,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": "84",
       "title": "Fitbit Active 4",
       "brand": "Fitbit",
       "category": "smartwatches",
@@ -3388,7 +3388,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": "85",
       "title": "Spigen Charger 1",
       "brand": "Spigen",
       "category": "accessories",
@@ -3428,7 +3428,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": "86",
       "title": "Lenovo Air 3",
       "brand": "Lenovo",
       "category": "laptops",
@@ -3469,7 +3469,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": "87",
       "title": "LG UltraWide 5",
       "brand": "LG",
       "category": "monitors",
@@ -3509,7 +3509,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": "88",
       "title": "Belkin Cable 2",
       "brand": "Belkin",
       "category": "accessories",
@@ -3549,7 +3549,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": "89",
       "title": "Samsung Plus 5",
       "brand": "Samsung",
       "category": "smartphones",
@@ -3590,7 +3590,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": "90",
       "title": "Huawei Sport 8",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -3630,7 +3630,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": "91",
       "title": "Apple Ultra 1",
       "brand": "Apple",
       "category": "smartphones",
@@ -3671,14 +3671,14 @@
       ]
     },
     {
-      "id": 92,
+      "id": "92",
       "title": "Microsoft Ultra 5",
       "brand": "Microsoft",
       "category": "tablets",
       "price": 419.57,
       "discount": 20,
       "stock": 62,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 1937,
       "description": "The Microsoft Ultra 5 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-92-1/900/900",
@@ -3712,7 +3712,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": "93",
       "title": "Razer Console 6",
       "brand": "Razer",
       "category": "gaming",
@@ -3752,7 +3752,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": "94",
       "title": "ASUS Curved 1",
       "brand": "ASUS",
       "category": "monitors",
@@ -3792,14 +3792,14 @@
       ]
     },
     {
-      "id": 95,
+      "id": "95",
       "title": "Apple Active 8",
       "brand": "Apple",
       "category": "smartwatches",
       "price": 418.86,
       "discount": 5,
       "stock": 66,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 2053,
       "description": "The Apple Active 8 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-95-1/900/900",
@@ -3832,7 +3832,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": "96",
       "title": "Apple Air 5",
       "brand": "Apple",
       "category": "tablets",
@@ -3873,7 +3873,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": "97",
       "title": "Apple Business 4",
       "brand": "Apple",
       "category": "laptops",
@@ -3914,7 +3914,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": "98",
       "title": "Lenovo Pro 8",
       "brand": "Lenovo",
       "category": "laptops",
@@ -3955,7 +3955,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": "99",
       "title": "Garmin Sport 8",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -3995,7 +3995,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": "100",
       "title": "HyperX Gaming 3",
       "brand": "HyperX",
       "category": "keyboards",
@@ -4035,7 +4035,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": "101",
       "title": "LG Gaming 5",
       "brand": "LG",
       "category": "monitors",
@@ -4075,14 +4075,14 @@
       ]
     },
     {
-      "id": 102,
+      "id": "102",
       "title": "Nintendo Gaming Mouse 9",
       "brand": "Nintendo",
       "category": "gaming",
       "price": 295.19,
       "discount": 15,
       "stock": 24,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 990,
       "description": "The Nintendo Gaming Mouse 9 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-102-1/900/900",
@@ -4115,14 +4115,14 @@
       ]
     },
     {
-      "id": 103,
+      "id": "103",
       "title": "Spigen Power Bank 7",
       "brand": "Spigen",
       "category": "accessories",
       "price": 17.42,
       "discount": 25,
       "stock": 48,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 635,
       "description": "The Spigen Power Bank 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-103-1/900/900",
@@ -4155,7 +4155,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": "104",
       "title": "Apple Air 9",
       "brand": "Apple",
       "category": "tablets",
@@ -4196,7 +4196,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": "105",
       "title": "Dell Slim 1",
       "brand": "Dell",
       "category": "laptops",
@@ -4237,7 +4237,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": "106",
       "title": "SteelSeries Elite Controller 2",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -4277,7 +4277,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": "107",
       "title": "Apple Active 2",
       "brand": "Apple",
       "category": "smartwatches",
@@ -4317,11 +4317,11 @@
       ]
     },
     {
-      "id": 108,
+      "id": "108",
       "title": "Apple Slim 3",
       "brand": "Apple",
       "category": "laptops",
-      "price": 1888.0,
+      "price": 1888,
       "discount": 0,
       "stock": 5,
       "rating": 3.9,
@@ -4358,7 +4358,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": "109",
       "title": "Dell Gaming 7",
       "brand": "Dell",
       "category": "monitors",
@@ -4398,7 +4398,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": "110",
       "title": "JBL Wireless 7",
       "brand": "JBL",
       "category": "headphones",
@@ -4438,7 +4438,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": "111",
       "title": "Corsair RGB 8",
       "brand": "Corsair",
       "category": "keyboards",
@@ -4478,7 +4478,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": "112",
       "title": "Sony Sport 6",
       "brand": "Sony",
       "category": "headphones",
@@ -4518,14 +4518,14 @@
       ]
     },
     {
-      "id": 113,
+      "id": "113",
       "title": "Samsung IPS 8",
       "brand": "Samsung",
       "category": "monitors",
       "price": 261.99,
       "discount": 20,
       "stock": 73,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 1223,
       "description": "The Samsung IPS 8 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-113-1/900/900",
@@ -4558,7 +4558,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": "114",
       "title": "LG IPS 5",
       "brand": "LG",
       "category": "monitors",
@@ -4598,7 +4598,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": "115",
       "title": "HyperX RGB 4",
       "brand": "HyperX",
       "category": "keyboards",
@@ -4638,7 +4638,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": "116",
       "title": "ASUS 4K 6",
       "brand": "ASUS",
       "category": "monitors",
@@ -4678,7 +4678,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": "117",
       "title": "JBL Noise Cancelling 9",
       "brand": "JBL",
       "category": "headphones",
@@ -4718,7 +4718,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": "118",
       "title": "Bose Sport 5",
       "brand": "Bose",
       "category": "headphones",
@@ -4758,7 +4758,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": "119",
       "title": "JBL Sport 9",
       "brand": "JBL",
       "category": "headphones",
@@ -4798,7 +4798,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": "120",
       "title": "Lenovo Plus 7",
       "brand": "Lenovo",
       "category": "tablets",
@@ -4839,7 +4839,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": "121",
       "title": "OnePlus Note 6",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -4880,14 +4880,14 @@
       ]
     },
     {
-      "id": 122,
+      "id": "122",
       "title": "ASUS 4K 3",
       "brand": "ASUS",
       "category": "monitors",
       "price": 197.61,
       "discount": 0,
       "stock": 38,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 487,
       "description": "The ASUS 4K 3 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-122-1/900/900",
@@ -4920,7 +4920,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": "123",
       "title": "Lenovo Creator 3",
       "brand": "Lenovo",
       "category": "laptops",
@@ -4961,7 +4961,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": "124",
       "title": "Canon Professional 7",
       "brand": "Canon",
       "category": "cameras",
@@ -5001,7 +5001,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": "125",
       "title": "Xiaomi Air 6",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -5042,7 +5042,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": "126",
       "title": "Xiaomi Plus 4",
       "brand": "Xiaomi",
       "category": "smartphones",
@@ -5083,7 +5083,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": "127",
       "title": "Google Ultra 3",
       "brand": "Google",
       "category": "smartphones",
@@ -5124,7 +5124,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": "128",
       "title": "HyperX Wireless 4",
       "brand": "HyperX",
       "category": "keyboards",
@@ -5164,7 +5164,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": "129",
       "title": "Sennheiser Studio 3",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -5204,7 +5204,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": "130",
       "title": "UGREEN USB-C Hub 3",
       "brand": "UGREEN",
       "category": "accessories",
@@ -5244,7 +5244,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": "131",
       "title": "Xiaomi Plus 9",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -5285,7 +5285,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": "132",
       "title": "Garmin Sport 1",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -5325,7 +5325,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": "133",
       "title": "Xiaomi Pro 2",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -5366,7 +5366,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": "134",
       "title": "Razer Gaming Mouse 9",
       "brand": "Razer",
       "category": "gaming",
@@ -5406,7 +5406,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": "135",
       "title": "Samsung Sport 8",
       "brand": "Samsung",
       "category": "smartwatches",
@@ -5446,7 +5446,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": "136",
       "title": "Canon Creator 7",
       "brand": "Canon",
       "category": "cameras",
@@ -5486,7 +5486,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": "137",
       "title": "Apple Pro 2",
       "brand": "Apple",
       "category": "laptops",
@@ -5527,7 +5527,7 @@
       ]
     },
     {
-      "id": 138,
+      "id": "138",
       "title": "Garmin Series 7",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -5567,7 +5567,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": "139",
       "title": "Sony Gaming Mouse 9",
       "brand": "Sony",
       "category": "gaming",
@@ -5607,14 +5607,14 @@
       ]
     },
     {
-      "id": 140,
+      "id": "140",
       "title": "Garmin Series 5",
       "brand": "Garmin",
       "category": "smartwatches",
       "price": 550.76,
       "discount": 20,
       "stock": 71,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 2292,
       "description": "The Garmin Series 5 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-140-1/900/900",
@@ -5647,7 +5647,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": "141",
       "title": "OnePlus Edge 5",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -5688,7 +5688,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": "142",
       "title": "Samsung Ultra 7",
       "brand": "Samsung",
       "category": "smartphones",
@@ -5729,7 +5729,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": "143",
       "title": "Fujifilm Professional 6",
       "brand": "Fujifilm",
       "category": "cameras",
@@ -5769,7 +5769,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": "144",
       "title": "Anker USB-C Hub 3",
       "brand": "Anker",
       "category": "accessories",
@@ -5809,7 +5809,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": "145",
       "title": "Microsoft Ultra 7",
       "brand": "Microsoft",
       "category": "tablets",
@@ -5850,7 +5850,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": "146",
       "title": "Spigen Stand 5",
       "brand": "Spigen",
       "category": "accessories",
@@ -5890,7 +5890,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": "147",
       "title": "Razer RGB 5",
       "brand": "Razer",
       "category": "keyboards",
@@ -5930,14 +5930,14 @@
       ]
     },
     {
-      "id": 148,
+      "id": "148",
       "title": "Anker Pro 4",
       "brand": "Anker",
       "category": "headphones",
       "price": 270.12,
       "discount": 15,
       "stock": 9,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 185,
       "description": "The Anker Pro 4 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-148-1/900/900",
@@ -5970,14 +5970,14 @@
       ]
     },
     {
-      "id": 149,
+      "id": "149",
       "title": "Canon Professional 2",
       "brand": "Canon",
       "category": "cameras",
       "price": 2627.7,
       "discount": 20,
       "stock": 73,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 1722,
       "description": "The Canon Professional 2 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-149-1/900/900",
@@ -6010,7 +6010,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": "150",
       "title": "LG IPS 1",
       "brand": "LG",
       "category": "monitors",
@@ -6050,7 +6050,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": "151",
       "title": "HP Pro 4",
       "brand": "HP",
       "category": "laptops",
@@ -6091,7 +6091,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": "152",
       "title": "Microsoft Console 3",
       "brand": "Microsoft",
       "category": "gaming",
@@ -6131,7 +6131,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": "153",
       "title": "Microsoft Gaming Headset 2",
       "brand": "Microsoft",
       "category": "gaming",
@@ -6171,7 +6171,7 @@
       ]
     },
     {
-      "id": 154,
+      "id": "154",
       "title": "Anker Sport 8",
       "brand": "Anker",
       "category": "headphones",
@@ -6211,7 +6211,7 @@
       ]
     },
     {
-      "id": 155,
+      "id": "155",
       "title": "Xiaomi Plus 5",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -6252,7 +6252,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": "156",
       "title": "Apple Pro 6",
       "brand": "Apple",
       "category": "tablets",
@@ -6293,7 +6293,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": "157",
       "title": "Fujifilm Compact 9",
       "brand": "Fujifilm",
       "category": "cameras",
@@ -6333,7 +6333,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": "158",
       "title": "Keychron Gaming 8",
       "brand": "Keychron",
       "category": "keyboards",
@@ -6373,7 +6373,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": "159",
       "title": "Dell Business 3",
       "brand": "Dell",
       "category": "laptops",
@@ -6414,7 +6414,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": "160",
       "title": "Nintendo Console 7",
       "brand": "Nintendo",
       "category": "gaming",
@@ -6454,7 +6454,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": "161",
       "title": "ASUS Pro 9",
       "brand": "ASUS",
       "category": "laptops",
@@ -6495,7 +6495,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": "162",
       "title": "Sony Gaming Mouse 3",
       "brand": "Sony",
       "category": "gaming",
@@ -6535,7 +6535,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": "163",
       "title": "AOC IPS 6",
       "brand": "AOC",
       "category": "monitors",
@@ -6575,7 +6575,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": "164",
       "title": "Nintendo Gaming Headset 4",
       "brand": "Nintendo",
       "category": "gaming",
@@ -6615,7 +6615,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": "165",
       "title": "Sony Studio 2",
       "brand": "Sony",
       "category": "headphones",
@@ -6655,7 +6655,7 @@
       ]
     },
     {
-      "id": 166,
+      "id": "166",
       "title": "Spigen Power Bank 3",
       "brand": "Spigen",
       "category": "accessories",
@@ -6695,7 +6695,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": "167",
       "title": "Corsair Gaming 5",
       "brand": "Corsair",
       "category": "keyboards",
@@ -6735,7 +6735,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": "168",
       "title": "Samsung Plus 8",
       "brand": "Samsung",
       "category": "tablets",
@@ -6776,7 +6776,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": "169",
       "title": "JBL Pro 3",
       "brand": "JBL",
       "category": "headphones",
@@ -6816,7 +6816,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": "170",
       "title": "Dell Pro 5",
       "brand": "Dell",
       "category": "laptops",
@@ -6857,7 +6857,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": "171",
       "title": "Anker Wireless 4",
       "brand": "Anker",
       "category": "headphones",
@@ -6897,7 +6897,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": "172",
       "title": "Garmin Pro 7",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -6937,7 +6937,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": "173",
       "title": "Microsoft Gaming Headset 1",
       "brand": "Microsoft",
       "category": "gaming",
@@ -6977,7 +6977,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": "174",
       "title": "Microsoft Pro 2",
       "brand": "Microsoft",
       "category": "tablets",
@@ -7018,7 +7018,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": "175",
       "title": "Canon Creator 4",
       "brand": "Canon",
       "category": "cameras",
@@ -7058,7 +7058,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": "176",
       "title": "Apple Slim 9",
       "brand": "Apple",
       "category": "laptops",
@@ -7099,14 +7099,14 @@
       ]
     },
     {
-      "id": 177,
+      "id": "177",
       "title": "UGREEN Power Bank 7",
       "brand": "UGREEN",
       "category": "accessories",
       "price": 41.84,
       "discount": 0,
       "stock": 67,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 289,
       "description": "The UGREEN Power Bank 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-177-1/900/900",
@@ -7139,7 +7139,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": "178",
       "title": "Huawei Active 9",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -7179,7 +7179,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": "179",
       "title": "Nintendo Wireless Controller 6",
       "brand": "Nintendo",
       "category": "gaming",
@@ -7219,7 +7219,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": "180",
       "title": "UGREEN Power Bank 1",
       "brand": "UGREEN",
       "category": "accessories",
@@ -7259,7 +7259,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": "181",
       "title": "Samsung Air 2",
       "brand": "Samsung",
       "category": "tablets",
@@ -7300,7 +7300,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": "182",
       "title": "Logitech RGB 5",
       "brand": "Logitech",
       "category": "keyboards",
@@ -7340,7 +7340,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": "183",
       "title": "Dell 4K 6",
       "brand": "Dell",
       "category": "monitors",
@@ -7380,7 +7380,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": "184",
       "title": "Nikon Digital 8",
       "brand": "Nikon",
       "category": "cameras",
@@ -7420,7 +7420,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": "185",
       "title": "Canon Professional 3",
       "brand": "Canon",
       "category": "cameras",
@@ -7460,7 +7460,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": "186",
       "title": "ASUS Curved 7",
       "brand": "ASUS",
       "category": "monitors",
@@ -7500,7 +7500,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": "187",
       "title": "Spigen Charger 1",
       "brand": "Spigen",
       "category": "accessories",
@@ -7540,7 +7540,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": "188",
       "title": "Samsung Note 8",
       "brand": "Samsung",
       "category": "smartphones",
@@ -7581,14 +7581,14 @@
       ]
     },
     {
-      "id": 189,
+      "id": "189",
       "title": "Razer Gaming Mouse 1",
       "brand": "Razer",
       "category": "gaming",
       "price": 443.31,
       "discount": 25,
       "stock": 47,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 326,
       "description": "The Razer Gaming Mouse 1 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-189-1/900/900",
@@ -7621,7 +7621,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": "190",
       "title": "Belkin Stand 6",
       "brand": "Belkin",
       "category": "accessories",
@@ -7661,7 +7661,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": "191",
       "title": "Anker Pro 7",
       "brand": "Anker",
       "category": "headphones",
@@ -7701,7 +7701,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": "192",
       "title": "HyperX RGB 8",
       "brand": "HyperX",
       "category": "keyboards",
@@ -7741,7 +7741,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": "193",
       "title": "ASUS Business 6",
       "brand": "ASUS",
       "category": "laptops",
@@ -7782,7 +7782,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": "194",
       "title": "SteelSeries Gaming Headset 2",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -7822,7 +7822,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": "195",
       "title": "SteelSeries Gaming Mouse 6",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -7862,14 +7862,14 @@
       ]
     },
     {
-      "id": 196,
+      "id": "196",
       "title": "Microsoft Ultra 7",
       "brand": "Microsoft",
       "category": "tablets",
       "price": 1266.81,
       "discount": 0,
       "stock": 16,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 315,
       "description": "The Microsoft Ultra 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-196-1/900/900",
@@ -7903,7 +7903,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": "197",
       "title": "Xiaomi Tab 6",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -7944,14 +7944,14 @@
       ]
     },
     {
-      "id": 198,
+      "id": "198",
       "title": "Dell Air 5",
       "brand": "Dell",
       "category": "laptops",
       "price": 829.31,
       "discount": 15,
       "stock": 28,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 2137,
       "description": "The Dell Air 5 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-198-1/900/900",
@@ -7985,7 +7985,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": "199",
       "title": "LG Gaming 4",
       "brand": "LG",
       "category": "monitors",
@@ -8025,7 +8025,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": "200",
       "title": "Dell Business 3",
       "brand": "Dell",
       "category": "laptops",
@@ -8066,7 +8066,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": "201",
       "title": "Anker USB-C Hub 2",
       "brand": "Anker",
       "category": "accessories",
@@ -8106,7 +8106,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": "202",
       "title": "Anker Cable 9",
       "brand": "Anker",
       "category": "accessories",
@@ -8146,7 +8146,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": "203",
       "title": "ASUS 4K 1",
       "brand": "ASUS",
       "category": "monitors",
@@ -8186,7 +8186,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": "204",
       "title": "Belkin Charger 6",
       "brand": "Belkin",
       "category": "accessories",
@@ -8226,7 +8226,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": "205",
       "title": "Huawei Series 6",
       "brand": "Huawei",
       "category": "smartwatches",
@@ -8266,7 +8266,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": "206",
       "title": "Apple Gaming 7",
       "brand": "Apple",
       "category": "laptops",
@@ -8307,7 +8307,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": "207",
       "title": "SteelSeries Console 4",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -8347,7 +8347,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": "208",
       "title": "Apple Pro 7",
       "brand": "Apple",
       "category": "tablets",
@@ -8388,7 +8388,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": "209",
       "title": "Google Air 8",
       "brand": "Google",
       "category": "smartphones",
@@ -8429,7 +8429,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": "210",
       "title": "Razer Console 1",
       "brand": "Razer",
       "category": "gaming",
@@ -8469,14 +8469,14 @@
       ]
     },
     {
-      "id": 211,
+      "id": "211",
       "title": "Panasonic Professional 9",
       "brand": "Panasonic",
       "category": "cameras",
       "price": 1055.25,
       "discount": 0,
       "stock": 16,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 1625,
       "description": "The Panasonic Professional 9 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-211-1/900/900",
@@ -8509,14 +8509,14 @@
       ]
     },
     {
-      "id": 212,
+      "id": "212",
       "title": "Nintendo Gaming Mouse 6",
       "brand": "Nintendo",
       "category": "gaming",
       "price": 540.73,
       "discount": 5,
       "stock": 65,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 176,
       "description": "The Nintendo Gaming Mouse 6 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-212-1/900/900",
@@ -8549,7 +8549,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": "213",
       "title": "Apple Ultra 6",
       "brand": "Apple",
       "category": "smartphones",
@@ -8590,7 +8590,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": "214",
       "title": "Bose Pro 6",
       "brand": "Bose",
       "category": "headphones",
@@ -8630,7 +8630,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": "215",
       "title": "Fitbit Active 5",
       "brand": "Fitbit",
       "category": "smartwatches",
@@ -8670,7 +8670,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": "216",
       "title": "Panasonic Creator 1",
       "brand": "Panasonic",
       "category": "cameras",
@@ -8710,7 +8710,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": "217",
       "title": "Spigen Power Bank 9",
       "brand": "Spigen",
       "category": "accessories",
@@ -8750,7 +8750,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": "218",
       "title": "OnePlus Edge 2",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -8791,7 +8791,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": "219",
       "title": "Corsair Gaming 8",
       "brand": "Corsair",
       "category": "keyboards",
@@ -8831,7 +8831,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": "220",
       "title": "Razer Gaming Mouse 7",
       "brand": "Razer",
       "category": "gaming",
@@ -8871,7 +8871,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": "221",
       "title": "Garmin Classic 8",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -8911,7 +8911,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": "222",
       "title": "Dell UltraWide 8",
       "brand": "Dell",
       "category": "monitors",
@@ -8951,7 +8951,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": "223",
       "title": "LG Curved 9",
       "brand": "LG",
       "category": "monitors",
@@ -8991,7 +8991,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": "224",
       "title": "LG Gaming 2",
       "brand": "LG",
       "category": "monitors",
@@ -9031,7 +9031,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": "225",
       "title": "HyperX RGB 9",
       "brand": "HyperX",
       "category": "keyboards",
@@ -9071,7 +9071,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": "226",
       "title": "Logitech Gaming 4",
       "brand": "Logitech",
       "category": "keyboards",
@@ -9111,7 +9111,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": "227",
       "title": "Lenovo Pro 9",
       "brand": "Lenovo",
       "category": "laptops",
@@ -9152,7 +9152,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": "228",
       "title": "Samsung Plus 6",
       "brand": "Samsung",
       "category": "tablets",
@@ -9193,14 +9193,14 @@
       ]
     },
     {
-      "id": 229,
+      "id": "229",
       "title": "Apple Pro 7",
       "brand": "Apple",
       "category": "smartwatches",
       "price": 803.44,
       "discount": 0,
       "stock": 4,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 1638,
       "description": "The Apple Pro 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-229-1/900/900",
@@ -9233,7 +9233,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": "230",
       "title": "Samsung Plus 1",
       "brand": "Samsung",
       "category": "tablets",
@@ -9274,7 +9274,7 @@
       ]
     },
     {
-      "id": 231,
+      "id": "231",
       "title": "Fitbit Pro 9",
       "brand": "Fitbit",
       "category": "smartwatches",
@@ -9314,7 +9314,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": "232",
       "title": "Samsung 4K 6",
       "brand": "Samsung",
       "category": "monitors",
@@ -9354,14 +9354,14 @@
       ]
     },
     {
-      "id": 233,
+      "id": "233",
       "title": "Panasonic Creator 2",
       "brand": "Panasonic",
       "category": "cameras",
       "price": 1382.25,
       "discount": 0,
       "stock": 23,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 1967,
       "description": "The Panasonic Creator 2 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-233-1/900/900",
@@ -9394,7 +9394,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": "234",
       "title": "Microsoft Wireless Controller 5",
       "brand": "Microsoft",
       "category": "gaming",
@@ -9434,7 +9434,7 @@
       ]
     },
     {
-      "id": 235,
+      "id": "235",
       "title": "Baseus USB-C Hub 5",
       "brand": "Baseus",
       "category": "accessories",
@@ -9474,7 +9474,7 @@
       ]
     },
     {
-      "id": 236,
+      "id": "236",
       "title": "Samsung IPS 9",
       "brand": "Samsung",
       "category": "monitors",
@@ -9514,7 +9514,7 @@
       ]
     },
     {
-      "id": 237,
+      "id": "237",
       "title": "SteelSeries Gaming Headset 4",
       "brand": "SteelSeries",
       "category": "gaming",
@@ -9554,7 +9554,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": "238",
       "title": "Panasonic Professional 9",
       "brand": "Panasonic",
       "category": "cameras",
@@ -9594,7 +9594,7 @@
       ]
     },
     {
-      "id": 239,
+      "id": "239",
       "title": "Fitbit Active 6",
       "brand": "Fitbit",
       "category": "smartwatches",
@@ -9634,7 +9634,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": "240",
       "title": "HyperX Gaming 3",
       "brand": "HyperX",
       "category": "keyboards",
@@ -9674,7 +9674,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": "241",
       "title": "Apple Tab 8",
       "brand": "Apple",
       "category": "tablets",
@@ -9715,14 +9715,14 @@
       ]
     },
     {
-      "id": 242,
+      "id": "242",
       "title": "Anker Stand 8",
       "brand": "Anker",
       "category": "accessories",
       "price": 124.37,
       "discount": 10,
       "stock": 2,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 24,
       "description": "The Anker Stand 8 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-242-1/900/900",
@@ -9755,14 +9755,14 @@
       ]
     },
     {
-      "id": 243,
+      "id": "243",
       "title": "HyperX Mechanical 1",
       "brand": "HyperX",
       "category": "keyboards",
       "price": 126.09,
       "discount": 0,
       "stock": 69,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 294,
       "description": "The HyperX Mechanical 1 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-243-1/900/900",
@@ -9795,14 +9795,14 @@
       ]
     },
     {
-      "id": 244,
+      "id": "244",
       "title": "Apple Plus 7",
       "brand": "Apple",
       "category": "tablets",
       "price": 417.58,
       "discount": 0,
       "stock": 53,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 1578,
       "description": "The Apple Plus 7 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-244-1/900/900",
@@ -9836,7 +9836,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": "245",
       "title": "Xiaomi Ultra 2",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -9877,7 +9877,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": "246",
       "title": "Panasonic Digital 4",
       "brand": "Panasonic",
       "category": "cameras",
@@ -9917,7 +9917,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": "247",
       "title": "Panasonic Professional 4",
       "brand": "Panasonic",
       "category": "cameras",
@@ -9957,7 +9957,7 @@
       ]
     },
     {
-      "id": 248,
+      "id": "248",
       "title": "Xiaomi Note 1",
       "brand": "Xiaomi",
       "category": "smartphones",
@@ -9998,7 +9998,7 @@
       ]
     },
     {
-      "id": 249,
+      "id": "249",
       "title": "Anker Power Bank 1",
       "brand": "Anker",
       "category": "accessories",
@@ -10038,7 +10038,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": "250",
       "title": "Sennheiser Studio 4",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -10078,7 +10078,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": "251",
       "title": "Keychron Wireless 9",
       "brand": "Keychron",
       "category": "keyboards",
@@ -10118,7 +10118,7 @@
       ]
     },
     {
-      "id": 252,
+      "id": "252",
       "title": "Panasonic Professional 1",
       "brand": "Panasonic",
       "category": "cameras",
@@ -10158,7 +10158,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": "253",
       "title": "Sony Creator 7",
       "brand": "Sony",
       "category": "cameras",
@@ -10198,7 +10198,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": "254",
       "title": "Anker Wireless 9",
       "brand": "Anker",
       "category": "headphones",
@@ -10238,7 +10238,7 @@
       ]
     },
     {
-      "id": 255,
+      "id": "255",
       "title": "Keychron Wireless 6",
       "brand": "Keychron",
       "category": "keyboards",
@@ -10278,7 +10278,7 @@
       ]
     },
     {
-      "id": 256,
+      "id": "256",
       "title": "Google Air 1",
       "brand": "Google",
       "category": "smartphones",
@@ -10319,7 +10319,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": "257",
       "title": "Corsair Wireless 6",
       "brand": "Corsair",
       "category": "keyboards",
@@ -10359,7 +10359,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": "258",
       "title": "Samsung Tab 4",
       "brand": "Samsung",
       "category": "tablets",
@@ -10400,7 +10400,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": "259",
       "title": "Fujifilm Compact 6",
       "brand": "Fujifilm",
       "category": "cameras",
@@ -10440,7 +10440,7 @@
       ]
     },
     {
-      "id": 260,
+      "id": "260",
       "title": "HP Gaming 4",
       "brand": "HP",
       "category": "laptops",
@@ -10481,7 +10481,7 @@
       ]
     },
     {
-      "id": 261,
+      "id": "261",
       "title": "Sony Studio 9",
       "brand": "Sony",
       "category": "headphones",
@@ -10521,7 +10521,7 @@
       ]
     },
     {
-      "id": 262,
+      "id": "262",
       "title": "Corsair Gaming 4",
       "brand": "Corsair",
       "category": "keyboards",
@@ -10561,7 +10561,7 @@
       ]
     },
     {
-      "id": 263,
+      "id": "263",
       "title": "Xiaomi Air 6",
       "brand": "Xiaomi",
       "category": "tablets",
@@ -10602,7 +10602,7 @@
       ]
     },
     {
-      "id": 264,
+      "id": "264",
       "title": "OnePlus Pro Max 2",
       "brand": "OnePlus",
       "category": "smartphones",
@@ -10643,7 +10643,7 @@
       ]
     },
     {
-      "id": 265,
+      "id": "265",
       "title": "Lenovo Pro 4",
       "brand": "Lenovo",
       "category": "laptops",
@@ -10684,7 +10684,7 @@
       ]
     },
     {
-      "id": 266,
+      "id": "266",
       "title": "Apple Pro 9",
       "brand": "Apple",
       "category": "tablets",
@@ -10725,7 +10725,7 @@
       ]
     },
     {
-      "id": 267,
+      "id": "267",
       "title": "Garmin Series 9",
       "brand": "Garmin",
       "category": "smartwatches",
@@ -10765,7 +10765,7 @@
       ]
     },
     {
-      "id": 268,
+      "id": "268",
       "title": "Samsung Pro 4",
       "brand": "Samsung",
       "category": "smartwatches",
@@ -10805,11 +10805,11 @@
       ]
     },
     {
-      "id": 269,
+      "id": "269",
       "title": "ASUS Slim 8",
       "brand": "ASUS",
       "category": "laptops",
-      "price": 1630.0,
+      "price": 1630,
       "discount": 5,
       "stock": 38,
       "rating": 4.5,
@@ -10846,7 +10846,7 @@
       ]
     },
     {
-      "id": 270,
+      "id": "270",
       "title": "Apple Air 7",
       "brand": "Apple",
       "category": "smartphones",
@@ -10887,7 +10887,7 @@
       ]
     },
     {
-      "id": 271,
+      "id": "271",
       "title": "HP Slim 6",
       "brand": "HP",
       "category": "laptops",
@@ -10928,7 +10928,7 @@
       ]
     },
     {
-      "id": 272,
+      "id": "272",
       "title": "HyperX Compact 5",
       "brand": "HyperX",
       "category": "keyboards",
@@ -10968,7 +10968,7 @@
       ]
     },
     {
-      "id": 273,
+      "id": "273",
       "title": "Samsung Plus 1",
       "brand": "Samsung",
       "category": "smartphones",
@@ -11009,7 +11009,7 @@
       ]
     },
     {
-      "id": 274,
+      "id": "274",
       "title": "Sennheiser Noise Cancelling 7",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -11049,7 +11049,7 @@
       ]
     },
     {
-      "id": 275,
+      "id": "275",
       "title": "Dell Business 6",
       "brand": "Dell",
       "category": "laptops",
@@ -11090,7 +11090,7 @@
       ]
     },
     {
-      "id": 276,
+      "id": "276",
       "title": "Baseus Stand 7",
       "brand": "Baseus",
       "category": "accessories",
@@ -11130,7 +11130,7 @@
       ]
     },
     {
-      "id": 277,
+      "id": "277",
       "title": "Samsung Plus 9",
       "brand": "Samsung",
       "category": "tablets",
@@ -11171,7 +11171,7 @@
       ]
     },
     {
-      "id": 278,
+      "id": "278",
       "title": "Dell Gaming 4",
       "brand": "Dell",
       "category": "laptops",
@@ -11212,14 +11212,14 @@
       ]
     },
     {
-      "id": 279,
+      "id": "279",
       "title": "Nikon Creator 2",
       "brand": "Nikon",
       "category": "cameras",
       "price": 547.11,
       "discount": 10,
       "stock": 56,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 1116,
       "description": "The Nikon Creator 2 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-279-1/900/900",
@@ -11252,7 +11252,7 @@
       ]
     },
     {
-      "id": 280,
+      "id": "280",
       "title": "Lenovo Pro 3",
       "brand": "Lenovo",
       "category": "laptops",
@@ -11293,7 +11293,7 @@
       ]
     },
     {
-      "id": 281,
+      "id": "281",
       "title": "Apple Active 6",
       "brand": "Apple",
       "category": "smartwatches",
@@ -11333,7 +11333,7 @@
       ]
     },
     {
-      "id": 282,
+      "id": "282",
       "title": "Samsung Active 9",
       "brand": "Samsung",
       "category": "smartwatches",
@@ -11373,7 +11373,7 @@
       ]
     },
     {
-      "id": 283,
+      "id": "283",
       "title": "ASUS UltraWide 2",
       "brand": "ASUS",
       "category": "monitors",
@@ -11413,7 +11413,7 @@
       ]
     },
     {
-      "id": 284,
+      "id": "284",
       "title": "Nintendo Gaming Headset 8",
       "brand": "Nintendo",
       "category": "gaming",
@@ -11453,7 +11453,7 @@
       ]
     },
     {
-      "id": 285,
+      "id": "285",
       "title": "Xiaomi Plus 7",
       "brand": "Xiaomi",
       "category": "smartphones",
@@ -11494,7 +11494,7 @@
       ]
     },
     {
-      "id": 286,
+      "id": "286",
       "title": "Dell Curved 4",
       "brand": "Dell",
       "category": "monitors",
@@ -11534,7 +11534,7 @@
       ]
     },
     {
-      "id": 287,
+      "id": "287",
       "title": "Microsoft Air 6",
       "brand": "Microsoft",
       "category": "tablets",
@@ -11575,7 +11575,7 @@
       ]
     },
     {
-      "id": 288,
+      "id": "288",
       "title": "HyperX Gaming 3",
       "brand": "HyperX",
       "category": "keyboards",
@@ -11615,7 +11615,7 @@
       ]
     },
     {
-      "id": 289,
+      "id": "289",
       "title": "Lenovo Pro 7",
       "brand": "Lenovo",
       "category": "tablets",
@@ -11656,14 +11656,14 @@
       ]
     },
     {
-      "id": 290,
+      "id": "290",
       "title": "Fujifilm Mirrorless 8",
       "brand": "Fujifilm",
       "category": "cameras",
       "price": 2974.89,
       "discount": 25,
       "stock": 74,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 2087,
       "description": "The Fujifilm Mirrorless 8 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-290-1/900/900",
@@ -11696,7 +11696,7 @@
       ]
     },
     {
-      "id": 291,
+      "id": "291",
       "title": "Panasonic Mirrorless 6",
       "brand": "Panasonic",
       "category": "cameras",
@@ -11736,7 +11736,7 @@
       ]
     },
     {
-      "id": 292,
+      "id": "292",
       "title": "Sennheiser Wireless 7",
       "brand": "Sennheiser",
       "category": "headphones",
@@ -11776,14 +11776,14 @@
       ]
     },
     {
-      "id": 293,
+      "id": "293",
       "title": "Samsung Curved 9",
       "brand": "Samsung",
       "category": "monitors",
       "price": 735.89,
       "discount": 5,
       "stock": 57,
-      "rating": 4.0,
+      "rating": 4,
       "reviews": 1908,
       "description": "The Samsung Curved 9 is designed for everyday use with a practical balance of performance, reliability, and modern features. It combines a comfortable design with dependable hardware and versatile connectivity, making it suitable for work, entertainment, study, travel, or gaming. The configuration is intended to provide consistent performance during regular use, while its carefully selected features make setup simple and flexible. It is a practical choice for users who want useful capabilities without unnecessary complexity.",
       "image": "https://picsum.photos/seed/shop-293-1/900/900",
@@ -11816,7 +11816,7 @@
       ]
     },
     {
-      "id": 294,
+      "id": "294",
       "title": "Baseus Power Bank 6",
       "brand": "Baseus",
       "category": "accessories",
@@ -11856,7 +11856,7 @@
       ]
     },
     {
-      "id": 295,
+      "id": "295",
       "title": "Lenovo Gaming 5",
       "brand": "Lenovo",
       "category": "laptops",
@@ -11897,7 +11897,7 @@
       ]
     },
     {
-      "id": 296,
+      "id": "296",
       "title": "HP Business 8",
       "brand": "HP",
       "category": "laptops",
@@ -11938,7 +11938,7 @@
       ]
     },
     {
-      "id": 297,
+      "id": "297",
       "title": "Google Edge 2",
       "brand": "Google",
       "category": "smartphones",
@@ -11979,7 +11979,7 @@
       ]
     },
     {
-      "id": 298,
+      "id": "298",
       "title": "Bose Pro 7",
       "brand": "Bose",
       "category": "headphones",
@@ -12019,7 +12019,7 @@
       ]
     },
     {
-      "id": 299,
+      "id": "299",
       "title": "Fujifilm Mirrorless 4",
       "brand": "Fujifilm",
       "category": "cameras",
@@ -12059,7 +12059,7 @@
       ]
     },
     {
-      "id": 300,
+      "id": "300",
       "title": "Keychron Mechanical 2",
       "brand": "Keychron",
       "category": "keyboards",

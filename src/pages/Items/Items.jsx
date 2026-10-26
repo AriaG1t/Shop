@@ -314,9 +314,7 @@ function Items() {
                         {
                             data.length > 0 ?
                                 data.map((item) => (
-                                    <Link className="h-min" to={`/product/${item.id}`}>
-                                        <Item key={item.id} {...item} />
-                                    </Link>
+                                    <Item key={item.id} {...item} />
                                 )) : <p className="font-mono text-xl mx-auto mt-10">No Product Found</p>
                         }
                     </div>

@@ -6,7 +6,7 @@ function AdminPanel() {
     return (
         <div>
             <Container>
-                <p className="font-mono">create</p>
+                <button className="font-mono bg-green-700 rounded px-2">Create +</button>
             </Container>
             <Items />
         </div>

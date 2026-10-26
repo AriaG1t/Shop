@@ -3,7 +3,6 @@ import Container from "../../components/Container/Container";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../services/api";
 import { useAppContext } from "../../context/AppContext";
-import ItemSkeleton from "../../components/Item/ItemSkeleton";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
