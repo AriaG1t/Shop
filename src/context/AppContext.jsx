@@ -26,6 +26,8 @@ function AppContextProvider({ children }) {
         return [value, setValue]
     }
 
+    const [activeModal, setActiveModal] = useState(null)
+
     const [products, setProducts] = useState([])
 
     const [activeMenu, setActiveMenu] = useState(null)
@@ -143,7 +145,9 @@ function AppContextProvider({ children }) {
                 login,
                 setLogin,
                 activeMenu,
-                setActiveMenu
+                setActiveMenu,
+                activeModal,
+                setActiveModal
             }}>
             {children}
         </AppContext.Provider>

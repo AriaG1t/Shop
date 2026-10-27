@@ -1,10 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { deleteProduct } from "../../services/api";
 import { useAppContext } from "../../context/AppContext";
+import Modal from "../Modal/Modal";
+import { useState } from "react";
+import Notification from "../Notification/Notification";
 
 function Item(item) {
 
-    const { setIsLoad } = useAppContext()
+    const { setIsLoad, activeModal, setActiveModal, setActiveNotif } = useAppContext()
 
     const discount = (item.discount / 100)
 
@@ -13,22 +16,24 @@ function Item(item) {
     const location = useLocation()
 
     const handleDelete = async () => {
-        const confirmed = window.confirm(
-            `Are you sure you want to delete this product? ( ${item.title} )`
-        );
-
-        if (!confirmed) return;
 
         try {
             setIsLoad(true);
 
-            await deleteProduct(item.id);
+            await deleteProduct(item.id)
+
+            setActiveModal(null);
+        showNotification(true);
 
         } catch (error) {
             console.error("Failed to delete product:", error);
         } finally {
             setIsLoad(false);
         }
+    }
+
+    const confirmModal = () => {
+        setActiveModal(`product${item.id}`)
     }
 
     return (
@@ -73,13 +78,20 @@ function Item(item) {
                             Edit
                         </Link>
                         <button
-                            onClick={(e) => { e.preventDefault(), e.stopPropagation(), handleDelete() }}
+                            onClick={(e) => { e.preventDefault(), e.stopPropagation(), confirmModal() }}
                             className="bg-red-700 cursor-pointer rounded-lg px-3 shadow hover:ring-3 hover:ring-mist-400 transition-all">
                             Delete
                         </button>
                     </div>
                 }
             </div>
+            <Modal isOpen={activeModal === `product${item.id}`}>
+                <h2 className="text-lg">Are you sure you want to delete this product?  " {item.title} "</h2>
+                <div className="mt-5">
+                    <button onClick={() => {handleDelete()}} className="cursor-pointer hover:ring-3 hover:ring-mist-400 transition-all mr-4 bg-green-700 px-4 rounded-lg ">Delete</button>
+                    <button onClick={() => setActiveModal(null)} className="cursor-pointer hover:ring-3 hover:ring-mist-400 transition-all bg-red-700 px-4 rounded-lg ">Cancel</button>
+                </div>
+            </Modal>
         </div>
     )
 }

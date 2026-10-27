@@ -1,4 +1,5 @@
 import Container from "../../components/Container/Container";
+import Notification from "../../components/Notification/Notification";
 import Items from "../Items/Items";
 
 function AdminPanel() {
