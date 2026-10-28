@@ -27,3 +27,9 @@ export async function deleteProduct(id) {
 
     return data
 }
+
+export async function postProduct(product) {
+    const { data } = await client.post("/products", product)
+
+    return data
+}

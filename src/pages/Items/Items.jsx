@@ -3,7 +3,7 @@ import Container from "../../components/Container/Container";
 import Item from "../../components/Item/Item";
 import { useAppContext } from "../../context/AppContext";
 import ItemSkeleton from "../../components/Item/ItemSkeleton";
-import { Link, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 function Items() {
 

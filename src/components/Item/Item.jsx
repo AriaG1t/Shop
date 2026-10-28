@@ -2,8 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { deleteProduct } from "../../services/api";
 import { useAppContext } from "../../context/AppContext";
 import Modal from "../Modal/Modal";
-import { useState } from "react";
-import Notification from "../Notification/Notification";
 
 function Item(item) {
 

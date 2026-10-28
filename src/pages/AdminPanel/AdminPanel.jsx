@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import Container from "../../components/Container/Container";
-import Notification from "../../components/Notification/Notification";
 import Items from "../Items/Items";
 
 function AdminPanel() {
@@ -7,7 +7,7 @@ function AdminPanel() {
     return (
         <div>
             <Container>
-                <button className="font-mono bg-green-700 rounded px-2">Create +</button>
+                <Link to="/admin/create" className="font-mono bg-green-700 rounded py-1 px-2">Create +</Link>
             </Container>
             <Items />
         </div>

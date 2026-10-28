@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import AdminPanel from "./pages/AdminPanel/AdminPanel";
 import AdminProduct from "./pages/AdminProduct/AdminProduct";
+import AdminCreate from "./pages/AminCreate/AdminCreate";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route element={<PrivateRoute requiredRole="admin"/>}>
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/admin/product/:id" element={<AdminProduct />} />
+          <Route path="/admin/create" element={<AdminCreate />} />
         </Route>
         <Route path="/Login" element={<LoginPage />} />
       </Routes>
