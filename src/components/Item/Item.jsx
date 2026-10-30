@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 
 function Item(item) {
 
-    const { setIsLoad, activeModal, setActiveModal, setActiveNotif } = useAppContext()
+    const { setIsLoad, activeModal, setActiveModal } = useAppContext()
 
     const discount = (item.discount / 100)
 
@@ -21,7 +21,6 @@ function Item(item) {
             await deleteProduct(item.id)
 
             setActiveModal(null);
-        showNotification(true);
 
         } catch (error) {
             console.error("Failed to delete product:", error);

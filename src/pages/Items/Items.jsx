@@ -13,7 +13,9 @@ function Items() {
 
     // Filter
 
-    const categories = [...new Set(products.map(item => item.category))]
+    const categories = useMemo(() =>
+        [...new Set(products.map(item => item.category))], [products])
+
     const [tempfilter, setTempFilter] = useState({
         categories: searchParams.get("category") ? [searchParams.get("category")] : [],
         sort: searchParams.get("sort") || "",

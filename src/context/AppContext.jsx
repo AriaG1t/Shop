@@ -118,11 +118,6 @@ function AppContextProvider({ children }) {
         return cartItems.find(item => item.product.id === id)?.qty
     }
 
-    // {
-    //      product: {product},
-    //      qty: 1
-    // }
-
     return (
         <AppContext.Provider
             value={{

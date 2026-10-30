@@ -43,12 +43,6 @@ function Home() {
         }))
     }, [products])
     
-    const stock = useMemo(() => {
-        let data = [...products]
-
-        return data.filter(item => item.warranty === "no_warranty")
-    }, [products])
-    
     return(
         <>
             <Container>

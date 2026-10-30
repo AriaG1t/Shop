@@ -1,6 +1,6 @@
 import Input from "../Input/Input";
 import { useAppContext } from "../../context/AppContext";
-import { useId, useState } from "react";
+import { useState } from "react";
 
 function SignUp() {
 
@@ -59,9 +59,9 @@ function SignUp() {
         <div className="font-mono mt-10 sm:w-max p-4 rounded-lg shadow mx-auto border border-mist-500 shadow-mist-600 bg-mist-800">
             <h2 className="text-xl">Sign Up</h2>
             <form onSubmit={handleSignUp} className="mt-6 sm:w-auto w-full gap-y-8 flex flex-col" action="">
-                <Input type="Email"/>
-                <Input type="Password"/>
-                <Input type="Re-Enter Password"/>
+                <Input type="Email" />
+                <Input type="Password" />
+                <Input type="Re-Enter Password" />
                 {Object.values(signUpError).some(value => value === false) && (
                     <div className="flex flex-col gap-2.5">
                         {signUpError.email === false && <p className="text-red-500 w-80 text-wrap text-xs">Email is not valid!</p>}

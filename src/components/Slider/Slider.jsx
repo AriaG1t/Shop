@@ -58,9 +58,9 @@ function Slider({ item }) {
                     </>
                     :
                     item.map(product => (
-                        <SwiperSlide>
+                        <SwiperSlide key={product.id}>
                             <div className="m-auto p-3">
-                                <Item key={product.id} {...product} />
+                                <Item {...product} />
                             </div>
                         </SwiperSlide>
                     ))

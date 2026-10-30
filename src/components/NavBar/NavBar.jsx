@@ -6,13 +6,15 @@ import { useRef, useState } from "react";
 
 function NavBar() {
 
-    const { isLogin, setActiveMenu, activeMenu } = useAppContext()
+    const { isLogin, setActiveMenu, activeMenu, cartItems } = useAppContext()
+
+    const totalQty = cartItems.reduce((total, item) => (total + item.qty), 0)
 
     const [position, setPosition] = useState(null)
 
     const navbarRef = useRef(null);
 
-    const handleSideMenu = (e) => {
+    const handleSideMenu = () => {
         if (activeMenu === null) {
             setActiveMenu("navbar")
         } else {
@@ -72,7 +74,7 @@ function NavBar() {
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
                             }>
-                                <div className="text-white">
+                                <div className="text-white relative">
                                     <svg
                                         width="24px"
                                         height="24px"
@@ -83,6 +85,9 @@ function NavBar() {
                                         <circle cx={9.5} cy={18.5} r={1.5} />
                                         <path d="M18 16H8a1 1 0 0 1-.958-.713L4.256 6H3a1 1 0 0 1 0-2h2a1 1 0 0 1 .958.713L6.344 6H21a1 1 0 0 1 .937 1.352l-3 8A1 1 0 0 1 18 16zm-9.256-2h8.563l2.25-6H6.944z" />
                                     </svg>
+                                    {
+                                        totalQty !== 0 && <span className="absolute bg-red-500 flex justify-center items-center font-mono p-0.5 -top-1 -right-3 rounded-full text-xs">{totalQty}</span>
+                                    }
                                 </div>
                             </NavLink>
                             {
@@ -111,7 +116,7 @@ function NavBar() {
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 sm:hidden hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
                     }
-                    onClick={() => setActiveMenu(null)}>
+                        onClick={() => setActiveMenu(null)}>
                         Admin Panel
                     </NavLink>
                 }
@@ -120,7 +125,7 @@ function NavBar() {
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                             hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
                 }
-                onClick={() => setActiveMenu(null)}>
+                    onClick={() => setActiveMenu(null)}>
                     User
                 </NavLink>
                 <NavLink to="/items" className={({ isActive }) =>
@@ -128,7 +133,7 @@ function NavBar() {
                                 ${isActive ? "after:w-full after:left-0" : "after:w-0 after:left-1/2"}
                                 hover:after:w-full after:transition-all after:absolute after:-bottom-0.5 hover:after:left-0 after:rounded-full after:h-0.5 after:bg-gray-200`
                 }
-                onClick={() => setActiveMenu(null)}>
+                    onClick={() => setActiveMenu(null)}>
                     Products
                 </NavLink>
             </SideMenu>

@@ -35,7 +35,7 @@ function Cart() {
                 {
                     cartItems.length > 0 ?
                         cartItems.map(item => (
-                            <CartItem item={item} />
+                            <CartItem key={item.product.id} item={item} />
                         ))
                         : <p className="mt-5 text-xl font-mono">No Products</p>
                 }

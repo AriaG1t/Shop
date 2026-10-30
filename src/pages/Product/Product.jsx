@@ -54,7 +54,7 @@ function Product() {
                                     >
                                         {
                                             product.images?.map(item => (
-                                                <SwiperSlide>
+                                                <SwiperSlide key={item}>
                                                     <img className="w-60 rounded m-auto" src={item} alt={`product ${product.id}`} />
                                                 </SwiperSlide>
                                             ))

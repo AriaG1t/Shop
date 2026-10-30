@@ -10,7 +10,7 @@ function AdminProduct() {
 
     const params = useParams()
 
-    const { setIsLoad, isLoad, products } = useAppContext()
+    const { setIsLoad, isLoad, products, setProducts } = useAppContext()
 
     const [product, setProduct] = useState([])
 
@@ -75,6 +75,14 @@ function AdminProduct() {
             );
 
             setOrgProduct(structuredClone(updatedProduct))
+            setProducts(prev =>
+                prev.map(item =>
+                    String(item.id) === String(updatedProduct.id)
+                        ? updatedProduct
+                        : item
+                )
+            )
+            
         } catch (error) {
             console.error("Failed to update product:", error);
         } finally {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../components/Container/Container";
 import { useAppContext } from "../../context/AppContext";
 import ProductSkeleton from "../Product/ProductSkeleton";
@@ -6,12 +6,12 @@ import { postProduct } from "../../services/api";
 
 function AdminCreate() {
 
-    const { isLoad, setIsLoad, products } = useAppContext()
+    const { isLoad, setIsLoad, products, setProducts } = useAppContext()
 
     const categories = [...new Set(products.map(item => item.category))]
 
     const [draft, setDraft] = useState({
-        id: "301",
+        id: "",
         title: "",
         features: [],
         specifications: {},
@@ -34,7 +34,7 @@ function AdminCreate() {
     })
 
     const initialProduct = {
-        id: "301",
+        id: "",
         title: "",
         features: [],
         specifications: {},
@@ -69,6 +69,23 @@ function AdminCreate() {
 
     const [editSection, setEditSection] = useState(null)
 
+    useEffect(() => {
+        if (!products.length) return;
+
+        const lastId = Math.max(
+            ...products.map(product => Number(product.id) || 0)
+        );
+
+        setDraft(prev => ({
+            ...prev,
+            id: String(lastId + 1)
+        }))
+        setProduct(prev => ({
+            ...prev,
+            id: String(lastId + 1)
+        }));
+    }, [products]);
+
     const startEdit = (section) => {
         setEditSection(section)
     }
@@ -98,6 +115,7 @@ function AdminCreate() {
 
             setProduct(createdProduct)
             setDraft(structuredClone(createdProduct))
+            setProducts(prev => ([...prev, createdProduct]))
 
         } catch (error) {
             console.error("Failed to create product:", error)
@@ -510,7 +528,7 @@ function AdminCreate() {
                                                         <input id="days"
                                                             onChange={e => {
                                                                 updateFeild("stock", e.target.value === "" ? "" : Number(e.target.value))
-                                                                updateFeild("availability", e.target.value !== 0 ? "in_stock" : "out_of_stock")
+                                                                updateFeild("availability", Number(e.target.value) !== 0 ? "in_stock" : "out_of_stock")
                                                                 if (draft.stock === "") {
                                                                     startEdit("details")
                                                                 }
